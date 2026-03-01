@@ -1,0 +1,261 @@
+/*
+Diana Ruiz
+Chapter 5, Lab2: Styling the Wild Rescues Webisted for a Moible Viewport
+style.css
+*/
+
+/*CSS ResetSpecifies a value of zero*/
+
+body, header, nav, main, footer, img, h1, h3,ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.main-title{
+    color: rgb(0, 0, 0);
+    font-family: "Gravitas One", serif; 
+    font-weight: 200;
+    font-style: normal;
+    font-size: 3.25em;
+    position:absolute;
+    margin-top: 7.5em;
+    margin-left: 1.0em;
+}
+
+.sub-title {
+    color: rgb(0, 0, 0);
+    font-family: "Gravitas One", serif; 
+    font-style: normal;
+    font-size: 2.25em;
+    position:absolute;
+    margin-top: 13em;
+    margin-left: 1.8em;
+}
+
+/*Style rules for the body and images*/
+
+body {
+    background-color: #f6eee4;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*Style rules for mobile viewport*/
+
+/*Style rules to show mobile class and hide tab-desk class*/
+
+.mobile {
+    display: block;
+}
+.tab-desk {
+    display: none;
+}
+
+/*Style rules for header area*/
+.mobile h1.mobile h3 {
+    padding: 2%;
+    text-align: center;
+}
+
+/*Style rule for navigation area*/
+
+nav {
+    background-color: #2a1f14;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+    border-top: 0.5px solid #f6eee4;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
+}
+
+/*Style rules for main content*/
+
+main {
+    padding: 2%;
+    font-family: "Lora", serif;
+}
+
+main p {
+    font-size: 1.25em;    
+}
+
+main h3 {
+    padding-top: 2%;
+}
+
+main ul {
+    list-style-type: square;
+}
+ 
+.link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.round {
+    border-radius: 6px;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+#contact {
+    text-align: center;
+}
+
+.tel-link {
+    background: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.tel-link {
+    color:  #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.mobile h1 {
+    font-family: "Emblema One", system-ui;
+}
+
+.mobile h3 {
+    font-family: "Lora", serif;
+}
+
+/*Media Query for Tablet Viewport*/
+
+@media screen and (min-width: 620px), print {
+
+}
+
+/*Media Query for Large Desktop Viiewports*/
+
+@media screen and (min-width: 1921px) {
+
+}
+
+body{
+    background: linear-gradient(#f6eee4, #78593a);
+}
+
+#wrapper {
+    width: 1920px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main{
+    background-color: #f6eee4;
+}
+
+/*Media Query for Print*/
+
+@media print {
+
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+/*Tablet Viewport: Show tab-desk class, hide mobile class*/
+
+.tab-desk {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+/*Media Query for Deskport Viewport*/
+
+@media screen and (min-width: 1000px), print {
+
+}
+
+/*Desktop Viewport: Style rules for the nav area*/
+
+nav li {
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+nav li a:hover {
+    color:#2a1f14;
+    background-color: #f6eee4;
+}
+
+/*Desktop Viewport: Style rules for main content*/
+
+#info ul {
+    margin-left: 5%;
+}
+
+/*Tablet Viewport: Style rules for nav area*/
+
+nav li {
+    border-top: none;
+    display: inline;
+    padding: 0.5em;
+}
+
+/*Style rules for footer content*/
+
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
