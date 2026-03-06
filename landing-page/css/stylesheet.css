@@ -1,0 +1,104 @@
+/*
+Diana Ruiz
+My First Website
+stylesheet.css
+*/
+/*CSS Reset*/
+body, header, nav, main, footer, img, h2, h1, p, footer{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Sytle rules for body and images*/
+body {
+    background-color: white;
+}
+
+.image-gallery {
+
+   
+}
+
+.gallery {
+ 
+}
+
+/*Styles for the navigation area*/
+nav {
+    background-color: hotpink;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+
+}
+
+nav li {
+    display:inline-block;
+    font-size: 1.5em;
+    font-family: Geneva,Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a { 
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-weight: bold;
+    text-decoration: none;
+ 
+}
+
+/*Style sheets for main*/
+
+main {
+    padding: 0.2%;
+    font-family: Verdan, Arial, sans-serif;
+
+}
+
+#about {
+    padding-top: 2%;
+    padding-left: 6%;
+
+}
+
+#about h1 {
+
+}
+
+#about img {
+
+}
+
+#about p {
+
+}
+
+#contact {
+
+}
+
+/*Styles for footer section*/
+footer {
+    text-align: center;
+
+}
+
+h3{
+
+}
+
+footer p{
+    
+}
+
+#footer-navigation {
+
+}
