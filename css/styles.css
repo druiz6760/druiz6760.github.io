@@ -1,0 +1,107 @@
+header{
+    height: 40vh;
+    background-image: url(../images/hero-freshly-cooked-pizza.jpg);
+    background-size: cover;
+    background-position:center bottom;
+    opacity:0.85;
+    position: relative;
+
+}
+
+header h1{
+    width:60%;
+    text-align: center; 
+    color: aliceblue;
+    font-size: 3.25em; 
+    position: absolute;
+    top:25%;
+    left:45%;
+    transform:translate(-50%, -50%);
+
+}
+
+nav{
+    float:right;
+    font-size: 1.35em;
+}
+
+nav li {
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    padding: 4px;
+    font-size: .90em;
+    color: aliceblue;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+main {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 5em auto;
+    
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5em;
+    gap: 5%;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.col-text{
+    flex: 1;
+}
+
+.col-img{
+    flex:1;
+}
+
+.col-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+footer{
+margin-top: 5%;
+background-color: greenyellow;
+}
+
+#footer-nav{
+   float: right;
+}
+
+#footer-nav li{
+display: inline-block;
+padding: 4px;
+}
+
+#footer-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.10em;
+    font-weight: bold;
+}
+
+#footer-contact{
+    text-align: left;
+    font-size: 1.10em;
+}
+
+.footer-logo{
+    width: 5%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
