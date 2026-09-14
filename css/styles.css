@@ -1,38 +1,13 @@
-header{
-    height: 40vh;
-    background-image: url(../images/hero-freshly-cooked-pizza.jpg);
-    background-size: cover;
-    background-position:center bottom;
-    opacity:0.85;
-    position: relative;
-
+/*CSS Reset*/
+body, header, nav, main, footer, h1,div,img{
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-header h1{
-    width:60%;
-    text-align: center; 
-    color: aliceblue;
-    font-size: 3.25em; 
-    position: absolute;
-    top:25%;
-    left:45%;
-    transform:translate(-50%, -50%);
-
-}
-
-nav{
-    float:right;
-    font-size: 1.35em;
-}
-
-nav li {
-    display: inline-block;
-}
-nav a {
-    text-decoration: none;
-    padding: 4px;
-    font-size: .90em;
-    color: aliceblue;
+/*Style rules for body and images*/
+body{
+    background-color: #ffffff;
 }
 
 img{
@@ -40,68 +15,120 @@ img{
     display: block;
 }
 
+/*Style rules for header*/
+header{
+    height: 40vh;
+    background-image: url(../images/hero-freshly-cooked-pizza.jpg);
+    background-size: cover; /*scales image to fit the header box*/
+    background-position:center bottom;
+    opacity:0.85;
+    position: relative;
+}
+
+header h1{
+    width:60%;
+    text-align: center; 
+    color: aliceblue;
+    font-size: 5.25em;
+    position: absolute;
+    top:15%;
+    left:45%;
+    transform:translate(-50%, -50%);
+
+}
+
+/*Style rules for navigation*/
+nav{
+    float:right;
+    font-size: 1.35em;
+    margin: 2em 3em 0 0;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    font-size: .90em;
+}
+nav a {
+    text-decoration: none;
+    padding: 4px;
+    color: aliceblue;
+}
+
+/*Style rules for main content*/
 main {
-    max-width: 1200px;
-    padding: 0 20px;
-    margin: 5em auto;
-    
+    background-color: #FBF9F6;
+    padding: 2%;
+    font-size: 1.25em;
+    display:flex;
+    flex-direction: column;/*tell items to stack in a column*/
+    gap: 2em;
 }
 
-.row{
-    display: flex;
-    align-items: center;
-    margin-bottom: 5em;
-    gap: 5%;
+.stagger-row{
+    display: flex;/*lines up images side-by-side*/
+    align-items: center;/*lines up items vertically*/
+    gap: 30%;/*adds space in between text and image*/
 }
 
-.row-reverse{
+.stagger-row:nth-child(even){ /*flips order of even rows*/
     flex-direction: row-reverse;
 }
 
-.col-text{
-    flex: 1;
-}
-
 .col-img{
-    flex:1;
-}
-
-.col-img img{
     width: 100%;
     height: auto;
-    display: block;
-    border-radius: 4px;
+    max-width: 400px;/*limits the image size*/
+    border-radius: 12px;
 }
 
-footer{
-margin-top: 5%;
-background-color: greenyellow;
+/*Style rules for footer*/
+footer {
+    border-top: solid 1px #ddd;
+    padding: 40px 0px;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;/*controls horizontal spacing and alignment*/
+    max-width: 95%;
+    margin: 0 auto;
+    align-items: flex-end;
 }
 
 #footer-nav{
-   float: right;
+     display: flex;
 }
 
-#footer-nav li{
-display: inline-block;
-padding: 4px;
+#footer-nav ul{
+    display:flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding:2em;
+    gap: 1em;
 }
 
-#footer-nav a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.10em;
-    font-weight: bold;
+#footer-nav a {
+   text-decoration: none;
+   padding: 0em 1.5em 0em 0em;
+   color: #2b2b2a;
+   font-size: 1.25em;
 }
 
-#footer-contact{
-    text-align: left;
-    font-size: 1.10em;
+#footer-logo {
+    display: flex;
+    flex-direction: column;/*tells items to stack vertically*/
+    align-items: center;/*controls up-down alignment*/
+    color:#2b2b2a;
 }
 
-.footer-logo{
-    width: 5%;
-    height: auto;
-    display: block;
-    margin-top: 10px;
+#footer-contact {
+    text-align: center;
+    color:#2b2b2a;
+    font-size: 1em;
 }
