@@ -1,5 +1,5 @@
 /*CSS Reset*/
-body, header, nav, main, footer, h1,div,img{
+body, header, nav, main, footer, h1, div, img{
     margin: 0;
     padding: 0;
     border: 0;
@@ -27,8 +27,8 @@ header{
 header h1{ 
     margin-left: .5em;
     float: left;
-    padding-top: 5.25%;
-    font-size: 2.5em;
+    padding-top: 4.25%;
+    font-size: 3.25em;
 }
 
 header a {
@@ -36,10 +36,11 @@ header a {
     color: #D20505;
 }
 /*Style rules for navigation*/
-nav{
+nav {
     margin: 3.5em 3em 0 0;
     float: right;
     font-weight: bold;
+    clear: both;
 }
 
 nav ul{
@@ -48,7 +49,7 @@ nav ul{
 
 nav li {
     display: inline-block;
-    font-size: 1.7em;
+    font-size: 1.25em;
 }
 nav li a {
     text-decoration: none;
@@ -58,39 +59,71 @@ nav li a {
 
 /*Style rules for main content*/
 main {
-    background-color: #F8F6F8;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-}
-
-.side-by-side-row {
-    width: 100%;
-    overflow: auto;
+    margin: 3%  3% 10% 10%;
+  
 }
 
 #site-purpose {
-    float: left;
+    width: 100%;
+    margin-top: 3%;
+    display: block;
+}
+
+#site-purpose h2 {
+    border: #D20505 solid;
+    width: 45%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+#site-purpose h3 {
+    border: #D20505 solid;
+    width: 100%;
+    margin-top: .5%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#site-purpose p {
+    border: #D20505 solid;
     width: 50%;
+    margin-top: .5%;
+    font-size: 1.5em;
 }
 
-.veg-img {
-    float: right;
-    width: 40%; 
+#site-purpose img {
+    border: #D20505 solid;
+    width: 40%;
+    display: inline-block;
 }
 
-.section-heading{
+#more-container {
     background-color: #FFFFFF;
-    font-size: 2.5em;
     padding-top: 4%;
     padding-bottom: 2%;
+    clear: right; 
+}
+
+#more-container h2 {
+    width: 60%;
+    margin-top: 15%;
+    margin-bottom: 3%;
+    font-size: 4em;
+    font-weight: bolder;
+}  
+
+.daily-meals {
+    width: 50%;
+    margin-top: .5%;
+    font-size: 1.25em;
 }
 
 #breakfast, #dinner, #dessert{
     width: 31%;
     margin-top: 4% 2% 4% 2%;
-    display: inline-block;
-    
+    display: inline-block; 
 }
 
 #breakfast, #dinner, #dessert img {
@@ -104,61 +137,52 @@ main {
     background-color: #FFFFFF;
 }
 
-#pics-in-a-row img {
-    width: 29%;
-    float: left;
-    clear: right;
-    padding-left: 3%;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    height:250px;
+.about-heading {
+    width: 60%;
+    margin-top: 15%;
+    margin-bottom: 3%;
+    font-size: 4em;
+    font-weight: bolder;
 }
 
-main p{
-    clear:both;
+.about-subheading {
+    width: 40%;
+    margin-top: .5%;
+    font-size: 1.5em;
+    font-weight: bold;
 }
+
+.row-of-imgs {
+    display: inline-block;
+    width: 100%;
+}
+
+.food-pics {
+    width: 32%;
+    height: 50vh;
+    display: inline-block;
+    border-radius: 3%;
+    padding-left: 1%;
+}
+
+/*Need to add sytles for contact page*/
 
 /*Style rules for footer*/
 footer {
-    background-color: black;
+    /*background-color: black;*/
     padding: 20px 40px;
-    clear: left;
+    border-top: #F8F6F8 solid 5px;
+    width: 100%;
 }
 
-#footer-nav ul li{
-    display: inline-block;
+.footer-nav {
+    
+    clear: both;
 }
 
-#footer-nav a {
-    text-decoration: none;
-    padding-right: 1.5em;
-    color:white;
-}
-
-#copyright {
-    float: left;
-    width: 30%;
+.copyright {
     text-align: left;
-    margin-top: .5em; 
-}
-
-#copyright p {
-    color:black;
-}
-
-#transparent-logo{
-    text-align: center;
-    width: 40%;
-    float:left;
-    padding-left: 11em;
-}
-
-
-#page-up-button {
-    float: right;
-    margin-top: 1em;
-    text-align: right;
-    text-decoration: none;
+    margin-top: 7%; 
 }
 
 
