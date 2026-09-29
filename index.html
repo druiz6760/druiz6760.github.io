@@ -5,83 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-Diana's Kitchen</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Header area for logo, business name, and navigation-->   
+    <header>
+        <h1><a href="index.html">DIANA'S KITCHEN</a></h1>
+        <nav>
+            <ul>
+                <li> <a href="fall2026/lesson1/labs/lab2">Lab1</a></li>
+                <li> <a href="fall2026/lesson2/labs/lab2">Lab2</a></li>
+                <li> <a href="fall2026/lesson3/labs/lab2">Lab3</a></li>
+                <li> <a href="fall2026/lesson4/labs/lab2">Lab4</a></li>
+                <li> <a href="fall2026/lesson5/labs/lab2/">Lab5</a></li>
+                <li> <a href="fall2026/lesson6/labs/lab2/">Lab6</a></li>
+                <li> <a href="fall2026/lesson6/labs/lab2/">Lab7</a></li>
+                <li> <a href="dishes.html">Dishes</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div id="container">
-
-    <!--Header area for logo, buisness name, and navigation-->   
-        <header>
-           <h1><a href="index.html">DIANA'S KITCHEN</a></h1>
-            <nav>
-                <ul><li> <a href="fall2026/lesson1/labs/lab2">Lab1</a></li>
-                    <li> <a href="fall2026/lesson2/labs/lab2">Lab2</a></li>
-                    <li> <a href="fall2026/lesson3/labs/lab2">Lab3</a></li>
-                    <li> <a href="fall2026/lesson4/labs/lab2">Lab4</a></li>
-                    <li> <a href="fall2026/lesson5/labs/lab2/">Lab5</a></li>
-                    <li> <a href="fall2026/lesson6/labs/lab2/">Lab6</a></li>
-                    <li> <a href="dishes.html">Dishes</a></li>
-                    <li> <a href="about.html">About</a></li>
-                    <li> <a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!--Main webpage content goes here-->
-        <main>
+    <!--Main webpage content goes here-->
+    <main>
+        <div id="site-purpose">
+            <h2>About This Site</h2>
+            <h3>An Online Record As I Look To Improve My Cooking Skills</h3>
+            <p>I've been learning to cook for years, mostly by following recipes, but that hasn't given me the instinct 
+            to put a dish together from scratch. I've decided to experiment with a different approach. I'll study cooking techniques, 
+            the science behind recipes, cooking tools, then publish what I learn alongside  a small selection of dishes I make. Each 
+            with a photo and a note on what I picked up along the way. Learning to cook is a tough skill to master, but I believe 
+            that practice and knowledge can get anyone there. Let the journey begin!</p>
+            <img src="images/fresh-vegetables.jpg" alt="vibrant colored raw vegetables">
+        </div>  
         
-                <div class="side-by-side-row">
-                    <div id="site-purpose">
-                        <h4>About This Site</h4>
-                        <h2>An Online Record As I Look To Improve My Cooking Skills</h2>
-                        <p>I've been learning to cook for years, mostly by following recipes, but that hasn't given me the instinct 
-                        to put a dish together from scratch. I've decided to experiment with a different approach.I'll study cooking techniques, the science behind recipes, cooking tools, then publish what I learn alongside 
-                        a small selection of dishes I make. Each with a photo and a note on what I picked up along the way. Learning to 
-                        cook is a tough skill to master, but I believe that practice and knowledge can get anyone there. Let the journey begin!</</p>
-                    </div>
-                    <div class="veg-img">
-                        <img src="images/fresh-vegetables.jpg" alt="vibrant colored raw vegetables"></a>
-                    </div>
-                </div>
-                
-                <h3 class="section-heading">More To Check Out</h3>
-
-                <div id="breakfast">
-                    <h3>Breakfast</h3>
-                    <img src="images/breakfast-burrito.jpeg" alt="Breakfast burrito with text 'Breakfast' on the picture">
-                </div>
-                
-                <div id="dinner">
-                    <h3>Dinner</h3>
-                    <img src="images/freshly-cooked-pizza.jpg" alt="Pasta with text 'Dinner' on the picture">
-                </div>
-                
-                <div id="dessert">
-                    <h3>Dessert</h3>
-                    <img src="images/cheesecake.jpeg" alt="Cheesecake with the text 'Desserts and breads' on the picture">
-                </div>
-        </main>
-
-        <!--Footer content-->
-        <footer>
-            <div id="footer-nav">
-                <ul><li> <a href="dishes.html">Dishes</a></li>
-                    <li> <a href="about.html">About</a></li>
-                    <li> <a href="contact.html">Contact</a></li>
-                </ul>
+        <div id="more-container">
+            <h2>More To Check Out</h2>
+            <div id="breakfast">
+                <img src="images/breakfast-burrito.jpeg" alt="Picture of a breakfast burrito below the word 'Breakfast'">
+                <h3 class="daily-meals">Breakfast</h3>
             </div>
-            <div id="copyright">
-                <p>&copy; 2026 Diana's Kitchen. All rights reserved.</p>
+            <div id="dinner">
+                <img src="images/freshly-cooked-pizza.jpg" alt="Picture of a whole pizza below the word 'Dinner'">
+                <h3 class="daily-meals">Dinner</h3>
             </div>
-            <div id="transparent-logo">
-                <a href="index.html"><img src="images/dianas-kitchen-transparent-logo.png" alt="Diana's Kitchen Logo" class="footer-logo"></a>
+            <div id="dessert">
+                <img src="images/cheesecake.jpeg" alt="Picture of a slice of cheesecake the below the word 'Desserts'">
+                <h3 class="daily-meals">Dessert</h3>
             </div>
-            <div id="page-up-button">
-                <a href="index.html"><p>Back to top &#129093;</p></a>
-            </div>
-        </footer> 
+        </div>
+    </main>
 
-    </div>
-
+    <!--Footer content-->
+    <footer>
+        <nav>
+            <ul>
+                <li> <a href="dishes.html">Dishes</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>   
+            <p>&copy; 2026 Diana's Kitchen. All rights reserved.</p>
+        
+            <a href="index.html"><img src="images/dianas-kitchen-transparent-logo.png" alt="Diana's Kitchen Logo" class="footer-logo"></a>
+            
+            <a href="index.html"><p>Back to top &#129093;</p></a>
+    </footer> 
 </body>
 </html>
