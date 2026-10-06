@@ -1,81 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Meta data-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Diana's Kitchen</title>
+    <title>Home-Diana's Kictchen</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Header area for logo, business name, and navigation-->   
     <header>
-        <h1><a href="index.html">DIANA'S KITCHEN</a></h1>
-        <nav>
-            <ul>
-                <li> <a href="fall2026/lesson1/labs/lab2">Lab1</a></li>
-                <li> <a href="fall2026/lesson2/labs/lab2">Lab2</a></li>
-                <li> <a href="fall2026/lesson3/labs/lab2">Lab3</a></li>
-                <li> <a href="fall2026/lesson4/labs/lab2">Lab4</a></li>
-                <li> <a href="fall2026/lesson5/labs/lab2/">Lab5</a></li>
-                <li> <a href="fall2026/lesson6/labs/lab2/">Lab6</a></li>
-                <li> <a href="fall2026/lesson7/labs/lab2/">Lab7</a></li>
-                <li> <a href="fall2026/lesson8/labs/lab2/">Lab8</a></li>
-                <li> <a href="fall2026/lesson9/labs/lab2/">Lab9</a></li>
-                <li> <a href="fall2026/lesson10/labs/lab2/">Lab10</a></li>
-                <li> <a href="fall2026/lesson11/labs/lab2/">Lab11</a></li>
-                <li> <a href="fall2026/lesson12/labs/lab2/">Lab12</a></li>
-                <li> <a href="dishes.html">Dishes</a></li>
-                <li> <a href="about.html">About</a></li>
-                <li> <a href="contact.html">Contact</a></li>
-            </ul>
+    <!--Header area for the logo, business name, and navigation links-->    
+        <h1 class="website-title"><a href="index.html">DIANA'S KITCHEN</a></h1>
+
+        <nav class="navbar">
+            <!--Navigation Menu-->
+            <ul class="nav-links">
+
+                <!--Navigation Menus-->
+                <div class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+
+                    <li class="services">
+                    <a href="#">Lessons</a><!--'#' tells browser not to change the pages, just jump back to the top of this page.-->
+                    <!--DROPDOWN MENU-->
+                    <ul class="dropdown">
+                        <li> <a href="fall2026/lesson1/labs/lab2">Lab1</a></li>
+                        <li> <a href="fall2026/lesson2/labs/lab2">Lab2</a></li>
+                        <li> <a href="fall2026/lesson3/labs/lab2">Lab3</a></li>
+                        <li> <a href="fall2026/lesson4/labs/lab2">Lab4</a></li>
+                        <li> <a href="fall2026/lesson5/labs/lab2/">Lab5</a></li>
+                        <li> <a href="fall2026/lesson6/labs/lab2/">Lab6</a></li>
+                        <li> <a href="fall2026/lesson7/labs/lab2/">Lab7</a></li>
+                        <li> <a href="fall2026/lesson8/labs/lab2/">Lab8</a></li>
+                        <li> <a href="fall2026/lesson9/labs/lab2/">Lab9</a></li>
+                        <li> <a href="fall2026/lesson10/labs/lab2/">Lab10</a></li>
+                        <li> <a href="fall2026/lesson11/labs/lab2/">Lab11</a></li>
+                        <li> <a href="fall2026/lesson12/labs/lab2/">Lab12</a></li>
+                    </ul>
+
+                    <li> <a href="contact.html">Contact</a></li>
+                    <li> <a href="blog.html">Blog</a></li> 
+                </div>    
+            </ul>    
         </nav>
     </header>
 
     <!--Main webpage content goes here-->
     <main>
-        <div id="site-purpose">
-            <h2>About This Site</h2>
-            <h3>An Online Record As I Look To Improve My Cooking Skills</h3>
-            <p>I've been learning to cook for years, mostly by following recipes, but that hasn't given me the instinct 
-            to put a dish together from scratch. I've decided to experiment with a different approach. I'll study cooking techniques, 
-            the science behind recipes, cooking tools, then publish what I learn alongside  a small selection of dishes I make. Each 
-            with a photo and a note on what I picked up along the way. Learning to cook is a tough skill to master, but I believe 
-            that practice and knowledge can get anyone there. Let the journey begin!</p>
-            <img src="images/fresh-vegetables.jpg" alt="vibrant colored raw vegetables">
-        </div>  
+
+        <div id="intro-pic">
+            <img src="images/adding-final-touches.jpg" alt="chef adding sauce to a dish">
+        </div>
         
-        <div id="more-container">
-            <h2>More To Check Out</h2>
-            <div id="breakfast">
-                <img src="images/breakfast-burrito.jpeg" alt="Picture of a breakfast burrito below the word 'Breakfast'">
-                <h3 class="daily-meals">Breakfast</h3>
-            </div>
-            <div id="dinner">
-                <img src="images/freshly-cooked-pizza.jpg" alt="Picture of a whole pizza below the word 'Dinner'">
-                <h3 class="daily-meals">Dinner</h3>
-            </div>
-            <div id="dessert">
-                <img src="images/cheesecake.jpeg" alt="Picture of a slice of cheesecake the below the word 'Desserts'">
-                <h3 class="daily-meals">Dessert</h3>
-            </div>
+        <div id="welcome-message">
+            <h2 class="mobile-h2">Welcome To My First Webiste</h2>
+            <p>Cooking is a creative and complex process. I recently discovered that behind a tasty dish is a science 
+               that incorporates temperature, weights, tools, and knowledge on how to incorporate food elements with 
+               each other in order to create a balanced flavor profile and appearance. My goal is to learn about cooking 
+               and not to become overwhelmed with expectations and the superfluous information that is out there.
+            </p>
+        </div>
+       
+        <h2 class="mobile-h2">My Dishes</h2>
+
+        <div id="breakfast">
+            <img src="images/breakfast-burrito.jpeg" alt="Picture of a breakfast burrito above the word 'Breakfast'">
+            <h3>Breakfast</h3>
+        </div>
+        <div id="dinner">
+            <img src="images/pallea.jpg" alt="Picture of pallea above the word 'Dinner'">
+            <h3>Dinner</h3>
+        </div>
+        <div id="dessert">
+            <img src="images/cheesecake.jpeg" alt="Picture of a slice of cheesecake above the word 'Desserts'">
+            <h3>Dessert</h3>
         </div>
     </main>
 
-    <!--Footer content-->
     <footer>
-        <nav>
-            <ul>
-                <li> <a href="dishes.html">Dishes</a></li>
-                <li> <a href="about.html">About</a></li>
-                <li> <a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>   
-            <p>&copy; 2026 Diana's Kitchen. All rights reserved.</p>
-        
-            <a href="index.html"><img src="images/dianas-kitchen-transparent-logo.png" alt="Diana's Kitchen Logo" class="footer-logo"></a>
-            
-            <a href="index.html"><p>Back to top &#129093;</p></a>
+    <!--Company logo, copyright information, and contact details-->
+        <p>&copy; 2026 Diana's Kitchen. All rights reserved.</p>          
+        <a href="index.html"><img src="images/dianas-kitchen-logo.png" alt="Diana's Kitchen Logo"></a>  
+        <p><a href="#" class="footer-button">Back to top &#129093;</a></p>  
     </footer> 
 </body>
 </html>
