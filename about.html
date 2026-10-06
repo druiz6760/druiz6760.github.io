@@ -4,67 +4,86 @@
     <!--Meta data-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About-Diana's Kitchen</title>
+    <title>About-Diana's Kictchen</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Header area for logo, business name, and navigation-->   
     <header>
-        <h1><a href="index.html">DIANA'S KITCHEN</a></h1>
-        <nav>
-            <ul>
-                <li> <a href="fall2026/lesson1/labs/lab2">Lab1</a></li>
-                <li> <a href="fall2026/lesson2/labs/lab2">Lab2</a></li>
-                <li> <a href="fall2026/lesson3/labs/lab2">Lab3</a></li>
-                <li> <a href="fall2026/lesson4/labs/lab2">Lab4</a></li>
-                <li> <a href="fall2026/lesson5/labs/lab2/">Lab5</a></li>
-                <li> <a href="fall2026/lesson6/labs/lab2/">Lab6</a></li>
-                <li> <a href="fall2026/lesson7/labs/lab2/">Lab7</a></li>
-                <li> <a href="fall2026/lesson8/labs/lab2/">Lab8</a></li>
-                <li> <a href="fall2026/lesson9/labs/lab2/">Lab9</a></li>
-                <li> <a href="fall2026/lesson10/labs/lab2/">Lab10</a></li>
-                <li> <a href="fall2026/lesson11/labs/lab2/">Lab11</a></li>
-                <li> <a href="fall2026/lesson12/labs/lab2/">Lab12</a></li>
-                <li> <a href="dishes.html">Dishes</a></li>
-                <li> <a href="about.html">About</a></li>
-                <li> <a href="contact.html">Contact</a></li>
-            </ul>
+    <!--Header area for the logo, business name, and navigation links-->    
+        <h1 class="website-title"><a href="index.html">DIANA'S KITCHEN</a></h1>
+
+        <nav class="navbar">
+            <!--Navigation Menu-->
+            <ul class="nav-links">
+
+                <!--Navigation Menus-->
+                <div class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+
+                    <li class="services">
+                    <a href="#">Lessons</a><!--'#' tells browser not to change the pages, just jump back to the top of this page.-->
+                    <!--DROPDOWN MENU-->
+                    <ul class="dropdown">
+                        <li> <a href="fall2026/lesson1/labs/lab2">Lab1</a></li>
+                        <li> <a href="fall2026/lesson2/labs/lab2">Lab2</a></li>
+                        <li> <a href="fall2026/lesson3/labs/lab2">Lab3</a></li>
+                        <li> <a href="fall2026/lesson4/labs/lab2">Lab4</a></li>
+                        <li> <a href="fall2026/lesson5/labs/lab2/">Lab5</a></li>
+                        <li> <a href="fall2026/lesson6/labs/lab2/">Lab6</a></li>
+                        <li> <a href="fall2026/lesson7/labs/lab2/">Lab7</a></li>
+                        <li> <a href="fall2026/lesson8/labs/lab2/">Lab8</a></li>
+                        <li> <a href="fall2026/lesson9/labs/lab2/">Lab9</a></li>
+                        <li> <a href="fall2026/lesson10/labs/lab2/">Lab10</a></li>
+                        <li> <a href="fall2026/lesson11/labs/lab2/">Lab11</a></li>
+                        <li> <a href="fall2026/lesson12/labs/lab2/">Lab12</a></li>
+                    </ul>
+
+                    <li> <a href="contact.html">Contact</a></li>
+                    <li> <a href="blog.html">Blog</a></li> 
+                </div>    
+            </ul>    
         </nav>
     </header>
 
     <!--Main content-->
     <main>
-        <div id="about-me">
-            <h2 class="about-heading">About Diana's Kitchen</h2>
-                <h3 class="about-subheading">Hello!</h3>
-                <p>I'm Diana Ruiz, and I've been cooking mostly from recipes and haven't improved much. I'd still call myself a beginner. 
-                But I have the passion: I love eating flavorful food, and seeing a well-plated meal brings me a sense of happiness.
-                Cooking used to be a chore, but it has transformed into a time to experiment and relax. I think a basic knowledge of cooking 
-                techniques, flavors, and working slowly will be essential to improving.</p>                      
+
+        <div id="about-webiste">
+            <h2>About Diana's Kitchen</h2>
+            <p class="welcome-heading">Welcome!</p>
+            <p>I've been learning to cook for years, mostly by following recipes, but that hasn't given me the instinct 
+            to put a dish together from scratch. I've decided to experiment with a different approach. I'll  study a little about cooking techniques, 
+            cooking tools, and publish what I learn alongside a small selection of dishes I make. Each 
+            with a photo and a note on what I picked up along the way. Learning to cook is a tough skill to master, but I believe 
+            that practice and knowledge can get anyone there. Let the journey begin!</p>
+        </div>
+                
+        <div id="row-of-pics">
+            <img src="images/pasta.jpeg" alt="cooking recipe on a note card">
+            <img src="images/homemade-tortillas.jpg" alt="homemade tortillas">
+            <img src="images/fresh-cookies.jpg" alt="ingredients for baking chocolate chip cookies spread out on the counter">
+        </div>
+
+        <div id="about-diana">
+            <h2>Meet The Chef</h2>
+            <p>I'm Diana Ruiz. I am currently pursuing a website development degree at Gwinnett Technical College. I want to learn to make
+            websites because I enjoy coding and become happy when both my code works and I comprehend what's happening under the hood. 
+            My hobbies include the outdoors and playing guitar. I hope that by the end of this semester I can code simple websites. 
+            Thanks for stopping by.</p> 
+            <img src="images/about-image-diana.jpg" alt="picture of diana">                     
         </div>  
 
-        <div id="row-of-imgs">
-            <img src="images/pasta.jpeg" alt="cooking recipe on a note card" class="food-pics">
-            <img src="images/homemade-tortillas.jpg" alt="homemade tortillas" class="food-pics">
-            <img src="images/fresh-cookies.jpg" alt="ingredients for baking chocolate chip cookies spread out on the counter" class="food-pics">
-        </div>
-        <p> This journal is just getting started. I'll add more content as I learn. So come by from time to time. Thanks for stopping by.<br><br>-Diana</p>
+
     </main>
 
-    <!--Company logo, copyright, and contact email goes here-->
     <footer>
-        <nav>
-            <ul>
-                <li> <a href="dishes.html">Dishes</a></li>
-                <li> <a href="about.html">About</a></li>
-                <li> <a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>   
-            
-            <a href="index.html"><img src="images/dianas-kitchen-transparent-logo.png" alt="Diana's Kitchen Logo" class="transparent-logo"></a>
-            <p class="copyright">&copy; 2026 Diana's Kitchen. All rights reserved.</p>
-            <a href="index.html" class="page-up-button"><p>Back to top &#129093;</p></a>
-    </footer> 
+    <!--Company logo, copyright information, and contact details-->
+        <p>&copy; 2026 Diana's Kitchen. All rights reserved.</p>          
+        <a href="index.html"><img src="images/dianas-kitchen-logo.png" alt="Diana's Kitchen Logo"></a>  
+        <p><a href="index.html" class="footer-button">Back to top &#129093;</a></p>  
+    </footer>  
 </body>
 </html>
