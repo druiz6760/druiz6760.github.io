@@ -1,13 +1,13 @@
 /*CSS Reset*/
-body, header, nav, main, footer, h1, div, img{
+body, header, nav, main, footer, h1, div, img, ul {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
 /*Style rules for body and images*/
-body{
-    background-color: #FFFFFF;
+body {
+    background-color: white;
 }
 
 img{
@@ -15,174 +15,276 @@ img{
     display: block;
 }
 
-/*Style rules for header*/
-header{
-    border: white;
-    height: 15vh;
-    border-bottom: #F8F6F8 solid 3px;
-    margin-bottom: 2%;
+/*Mobile Viewport*/
+/*Style rules for the header*/
+header {
+    max-width: 100%;
+    border-bottom: solid 6px #f8f6f8;
+}
+
+.website-title {
+    width: 100%;
+}
+
+.website-title a { 
+    text-decoration: none;
+    color: red;
+    padding-left: 15%;
+    font-size: .9em;
+}
+/*Style rules for the nav*/
+nav {
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+#nav-links{
     
 }
-
-header h1{ 
-    margin-left: .5em;
-    float: left;
-    padding-top: 4.25%;
-    font-size: 3.25em;
-}
-
-header a {
-    text-decoration: none;
-    color: #D20505;
-}
-/*Style rules for navigation*/
-nav {
-    margin: 3.5em 3em 0 0;
-    float: right;
-    font-weight: bold;
-    clear: both;
-}
-
-nav ul{
-    list-style-type: none;
-}
-
-nav li {
+/*Navbar Menu*/
+.menu {
+    
     display: inline-block;
-    font-size: 1.25em;
-}
-nav li a {
-    text-decoration: none;
-    padding: 10px;
-    color: black;
-}
-
-/*Style rules for main content*/
-main {
-    margin: 3%  3% 10% 10%;
-  
-}
-
-#site-purpose {
     width: 100%;
-    margin-top: 3%;
+    text-align: center;
+    background-color: #f8f6f8;
+    border-radius: 3%;
+}
+
+.menu li:hover {
+    background-color: #ccdce4;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+    list-style-type: none;
+    font-size: 1.5em;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}   
+
+/*Dropdown Menu*/
+.services {
+    position: relative; /*Parent Element. Also the refrence point for the child (.dropdown)*/
+}
+
+.dropdown {
+    background-color: #d40404;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 30px;
+}
+
+.dropdown li + li {
+     margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown:hover {
+    background-color: #ccdce4;
+}
+
+.services:hover .dropdown {
     display: block;
 }
 
-#site-purpose h2 {
-    border: #D20505 solid;
+/*Sytle rules for main*/
+main {
+    background-color: white;
+    padding: 1%;
+    overflow: auto;
+    margin-left: 7.5%;
+    display: block;
+}
+
+#intro-pic {
+    width: 95%; /*box width is 85% of the screen*/
+    display: block;
+    margin: auto;
+}
+
+ #welcome-message{
+    background-color: #f8f6f8;
+    margin: 0% auto 2% auto; 
+    text-align: center;
+    width:100%;
+ }
+
+.mobile-h2 {
+    font-size: 2em;
+
+}
+
+#breakfast, #dinner, #dessert {
+    width: 29%;
+    float: left;
+    margin: 1% 1.25% 5.5% auto; 
+    clear: right;
+    background-color: #f8f6f8;
+    border-radius: 10px;
+}
+
+#breakfast h3, #dinner h3, #dessert h3 {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#about-webiste {
     width: 45%;
-    margin-top: 7%;
-    margin-bottom: 3%;
-    font-size: 4em;
-    font-weight: bolder;
+    margin: 7% auto;/*top & bottom margin set to 400. Left & right margin set to equal amounts respectivly*/
 }
 
-#site-purpose h3 {
-    border: #D20505 solid;
-    width: 100%;
-    margin-top: .5%;
-    font-size: 1.5em;
+h2 {
+    margin-top: 0%;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
-#site-purpose p {
-    border: #D20505 solid;
-    width: 50%;
-    margin-top: .5%;
-    font-size: 1.5em;
-}
-
-#site-purpose img {
-    border: #D20505 solid;
-    width: 40%;
-    display: inline-block;
-}
-
-#more-container {
-    background-color: #FFFFFF;
-    padding-top: 4%;
-    padding-bottom: 2%;
-    clear: right; 
-}
-
-#more-container h2 {
-    width: 60%;
-    margin-top: 15%;
-    margin-bottom: 3%;
-    font-size: 4em;
-    font-weight: bolder;
-}  
-
-.daily-meals {
-    width: 50%;
-    margin-top: .5%;
-    font-size: 1.25em;
-}
-
-#breakfast, #dinner, #dessert{
-    width: 31%;
-    margin-top: 4% 2% 4% 2%;
-    display: inline-block; 
-}
-
-#breakfast, #dinner, #dessert img {
-    max-width:100%;        
-    height: auto;
-    margin-bottom: 5%;
-    margin-left: 2%;
-}
-
-#about-me{
-    background-color: #FFFFFF;
-}
-
-.about-heading {
-    width: 60%;
-    margin-top: 15%;
-    margin-bottom: 3%;
-    font-size: 4em;
-    font-weight: bolder;
-}
-
-.about-subheading {
-    width: 40%;
-    margin-top: .5%;
-    font-size: 1.5em;
+.welcome-heading {
     font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
-.row-of-imgs {
-    display: inline-block;
-    width: 100%;
+p {
+    font-size: 2.5em;
 }
 
-.food-pics {
+#row-of-pics img {
     width: 32%;
-    height: 50vh;
-    display: inline-block;
+    float: left;
+    margin: 7% auto;
+    margin-left: .5%;
+    clear: right;
     border-radius: 3%;
-    padding-left: 1%;
 }
 
-/*Need to add sytles for contact page*/
+#about-diana {
+    clear:both;
+    width: 55%;
+    margin: 7% auto;
+}
 
-/*Style rules for footer*/
-footer {
-    /*background-color: black;*/
-    padding: 20px 40px;
-    border-top: #F8F6F8 solid 5px;
+#about-diana h2 {
     width: 100%;
 }
 
-.footer-nav {
-    
-    clear: both;
+#about-diana p {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
 }
 
-.copyright {
+#about-diana img {
+    margin-left: 25%;
+    border-radius: 3%;
+}
+
+.connect {
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    font-weight: bold;
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#comment-submission {
+    background-color:#f8f6f8;
     text-align: left;
-    margin-top: 7%; 
+    width: 45%;
+    margin: 0 3% 0 3%;
+    float: left;
+}
+
+#comment-submission h3 {
+    font-size: 4.5em;
+    margin-left: 2%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#comment-submission p {
+    margin-left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#comment-submission a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.contact-img {
+    width: 45%;
+    height: 35vh;
+    border-radius: 3%;
+}
+
+/*Stle rules for the footer*/
+footer {
+    clear: both;
+    background-color: black;
+}
+
+footer p {
+    font-weight: bold;
+    color: white;
+    font-size: .5em;
+    width: 30%;
+}
+
+footer img {
+   width: 25%;
+   margin: auto;
+   border-bottom: black solid 2px;
+}
+
+ footer .footer-button {
+    float: right;
+    font-size: 1.25em;
+    text-decoration: none;
+    width: 100%;
+    color:black
+}
+
+/*Large smartphone and tablets*/
+@media (min-width:481px) and (max-width: 768px), print {
+    body { 
+        background-color: blue; 
+        color:white;
+    }
+}
+
+/*Tablets in landscape orientation, laptops, and small desktop monitors*/
+@media (min-width: 769px) and (max-width: 1279px), print {
+    body { 
+        background-color: yellow; 
+        color:darkblue;
+    }
+}
+
+/*Large desktop monitors*/
+@media (min-width: 1280px) {
+    body { 
+        background-color: purple; 
+        color:whitesmoke;
+    }
 }
 
 
