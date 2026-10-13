@@ -1,91 +1,107 @@
-/*CSS Reset*/
-body, header, nav, main, footer, h1, div, img, ul {
+/*
+Diana Ruiz
+10/10/26
+styles.css
+*/
+
+/*CSS RESET*/
+*{
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
 
-/*Style rules for body and images*/
+/*GLOBAL STYLE RULES*/
 body {
-    background-color: white;
+    font-family:  Arial, sans-serif ;
+    background-color: #fff;
 }
 
-img{
+img {
     max-width: 100%;
     display: block;
+    border-radius: 8px;
 }
 
-/*Mobile Viewport*/
-/*Style rules for the header*/
-header {
-    max-width: 100%;
-    border-bottom: solid 6px #f8f6f8;
-}
-
-.website-title {
-    width: 100%;
-}
-
-.website-title a { 
+a {
     text-decoration: none;
-    color: red;
-    padding-left: 15%;
-    font-size: .9em;
-}
-/*Style rules for the nav*/
-nav {
-    margin-bottom: 1%;
-    padding: 1%;
 }
 
-#nav-links{
-    
+li {
+    list-style: none;
 }
-/*Navbar Menu*/
-.menu {
-    
-    display: inline-block;
-    width: 100%;
+
+header {
+     background-image: url(../images/hero-v1.png); height: 60vh; 
+     background-repeat: no-repeat;
+     background-position: center center;/*Centers the image*/
+     background-size: cover;/*Scales the image to cover the entire element*/
+}
+
+.header_text {
     text-align: center;
-    background-color: #f8f6f8;
-    border-radius: 3%;
+    color: white;
+    margin-top: 1%;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px #292933;
+}
+
+/*NAVBAR STYLING STARTS*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(43, 47, 50, .2);
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+/*LOGO*/
+.logo {
+    font-size: 25px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+/*NAVBAR MENU*/
+.menu {
+    display: flex;  
+    gap: 1em;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
 }
 
 .menu li:hover {
-    background-color: #ccdce4;
+    background-color: #D40405;
     border-radius: 5px;
     transition: 0.3s ease;
 }
 
 .menu li {
     padding: 5px 14px;
-    list-style-type: none;
-    font-size: 1.5em;
 }
 
-.menu li a {
-    text-decoration: none;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:bold;
-}   
-
-/*Dropdown Menu*/
+/*DROPDOWN MENU*/
 .services {
-    position: relative; /*Parent Element. Also the refrence point for the child (.dropdown)*/
+    position: relative;
 }
 
 .dropdown {
-    background-color: #d40404;
+    background-color: rgb(212, 4, 5);
     padding: 1em 0;
-    position: absolute;
+    position:absolute;/*WITH RESPECT TO PARENT*/
     display: none;
     border-radius: 8px;
     top: 30px;
 }
 
 .dropdown li + li {
-     margin-top: 10px;
+    margin-top: 10%;
 }
 
 .dropdown li {
@@ -94,198 +110,294 @@ nav {
     text-align: center;
 }
 
-.dropdown:hover {
-    background-color: #ccdce4;
+.dropdown li:hover {
+    background-color:#990304;
 }
 
-.services:hover .dropdown {
-    display: block;
+.services:hover .dropdown{
+     display: block;
 }
 
-/*Sytle rules for main*/
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/*CHECKBOX HACK*/
+
+input[type=checkbox] {
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
 main {
-    background-color: white;
-    padding: 1%;
-    overflow: auto;
-    margin-left: 7.5%;
-    display: block;
+    padding: 2%;
+    font-size: 1.25em;
+    font-family: "Open Sans", sans-serif;
 }
 
-#intro-pic {
-    width: 95%; /*box width is 85% of the screen*/
-    display: block;
-    margin: auto;
+section {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    justify-items: center;
+    border-radius: 6px;
+    margin-bottom: 5%;
 }
 
- #welcome-message{
-    background-color: #f8f6f8;
-    margin: 0% auto 2% auto; 
+#about h2 {
     text-align: center;
-    width:100%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+#about p {
+    text-align: justify;  
+    margin-left: 6%;
+    margin-right: 4%;
+}
+
+#about-pic {
+    width: 65%;             
+    margin-left: auto;      
+    margin-right: auto;
+}
+
+#about-webpage {
+    margin: 20px;
+}
+
+#about-webpage h2 {
+   text-align: center;
+   margin-top: 5%;
+   margin-bottom: 3%;
+}
+
+#about-webpage p {
+    text-align: justify;
+}
+
+#food-gallery {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 20px;
+}
+
+.frame {
+    position: relative;/*Pins the content down as a refrence point for element with 'position: absolute'*/
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+.pic-text {
+    position: absolute;
+    bottom: 0;
+    background: rgb(43, 47, 50, 0.3);
+    color: #fff;
+    width: 100%;
+    padding: 20%;
+    text-align: center;
+    font-family: "Open Sans", sans-serif; ;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#meal-plan {
+    margin: 3% 4%;
+    border: solid black 2px;
+    border-radius: 8px;
+    background:linear-gradient(135deg, #DFE4E7, #fff);
+}
+
+#meal-plan h2 {
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#meal-plan h3 {
+    text-align: left;
+    font-weight: bold;
+    margin:4px 0;
+}
+
+ /*SHOW THE MOBILE CLASS, HIDE THE DESKTOP CLASS*/
+ .mobile-tablet {
+    display: block;
  }
 
-.mobile-h2 {
-    font-size: 2em;
+ .desktop {
+    display: none;
+ }
 
+ /*FORM SECTION FOR MOBILE VIEWPORT*/
+ form {
+    margin-top: 2%;
+    background-color: #E5E5E9;
+    padding: 2%;
+    border-radius: 8px;
+ }
+
+ form h2 {
+    text-align: center;
+ }
+
+ /*STYLE RULES FOR FORM ELEMENTS*/
+fieldset, input, textarea {
+    margin-top: 3%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3%;
+    border-radius: 4px;
+    border: 1px solid #ccc; 
 }
 
-#breakfast, #dinner, #dessert {
-    width: 29%;
-    float: left;
-    margin: 1% 1.25% 5.5% auto; 
-    clear: right;
-    background-color: #f8f6f8;
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+#form-wrapper button {
+    width: 25%;
+    margin: 3% auto 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #1e1e24;
+    color: white;
+    font-size: 1em;
     border-radius: 10px;
 }
 
-#breakfast h3, #dinner h3, #dessert h3 {
-    font-size: 1em;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-#about-webiste {
-    width: 45%;
-    margin: 7% auto;/*top & bottom margin set to 400. Left & right margin set to equal amounts respectivly*/
-}
-
-h2 {
-    margin-top: 0%;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.welcome-heading {
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 2.5em;
-}
-
-#row-of-pics img {
-    width: 32%;
-    float: left;
-    margin: 7% auto;
-    margin-left: .5%;
-    clear: right;
-    border-radius: 3%;
-}
-
-#about-diana {
-    clear:both;
-    width: 55%;
-    margin: 7% auto;
-}
-
-#about-diana h2 {
+.map {
+    display: block;
+    border: solid 1px #000;
     width: 100%;
+    margin: 4% auto 2% auto;
+
 }
 
-#about-diana p {
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5em;
-}
-
-#about-diana img {
-    margin-left: 25%;
-    border-radius: 3%;
-}
-
-.connect {
-    width: 100%;
-    margin-top: 8%;
-    margin-bottom: 4%;
-    font-weight: bold;
-    font-size: 5em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#comment-submission {
-    background-color:#f8f6f8;
-    text-align: left;
-    width: 45%;
-    margin: 0 3% 0 3%;
-    float: left;
-}
-
-#comment-submission h3 {
-    font-size: 4.5em;
-    margin-left: 2%;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#comment-submission p {
-    margin-left: 2%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#comment-submission a {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-}
-
-.contact-img {
-    width: 45%;
-    height: 35vh;
-    border-radius: 3%;
-}
-
-/*Stle rules for the footer*/
-footer {
-    clear: both;
-    background-color: black;
-}
-
+/*FOOTER STYLE RULES*/
 footer p {
-    font-weight: bold;
-    color: white;
-    font-size: .5em;
-    width: 30%;
+    text-align: center;
+    font-size: .85em;
+    display: block;
+    
 }
 
-footer img {
-   width: 25%;
-   margin: auto;
-   border-bottom: black solid 2px;
-}
+/*APPLYING MEDIA QUERIES*/
+/*TABLETS IN LANDSCAPE ORIENTATION, LAPTOPS, AND SMALL DESKTOPS MONITORS*/
+@media (min-width: 768px), print {
 
- footer .footer-button {
-    float: right;
-    font-size: 1.25em;
-    text-decoration: none;
-    width: 100%;
-    color:black
-}
+    header {
+       padding: 2%;
+       width: 100%;
+    }
 
-/*Large smartphone and tablets*/
-@media (min-width:481px) and (max-width: 768px), print {
-    body { 
-        background-color: blue; 
-        color:white;
+    .navbar {
+        width: 100%;
+        position: relative;
+    }
+
+    /*STYLE RULES FOR THE  MENU ELEMENTS*/
+    .menu {
+        display: none;
+        position:absolute;
+        background-color: teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.3s ease;
+    }
+
+    .menu li + li {
+        border: red;
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        border: red solid;
+        left: 10%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+
+    /*TABLET VIEWPORT: SHOW MOBILE-TABLET CLASS , HIDE DESKTOP CLASS*/
+
+    .mobile-tablet {
+        display: block;
+    }
+    
+    .desktop {
+        display: hide;
+    }
+
+    .map {
+        width: 600px;
+        height: 450px;
     }
 }
 
-/*Tablets in landscape orientation, laptops, and small desktop monitors*/
-@media (min-width: 769px) and (max-width: 1279px), print {
-    body { 
-        background-color: yellow; 
-        color:darkblue;
+/*MEDIA QUERY FOR DESKTOP VIEWPORT*/
+@media screen and (min-width: 1024px), and print {
+    /*DESKTOP VIEWPORT: STYLE RULES FOR HEADER*/
+    header {
+
+    }
+
+    /*DESKTOP VIEWPORT: STYLE RULES FOR NAV AREA*/ 
+    nav {
+
+
+    }
+
+    .hamburger {
+    display: inline-block;
+    font-size: 24px;
+    user-select: none;
+    }
+
+    /*DESKTOP VIEWPORT: STYLE RULES  FOR MAIN CONTENT*/
+    main {
+
     }
 }
 
-/*Large desktop monitors*/
-@media (min-width: 1280px) {
-    body { 
-        background-color: purple; 
-        color:whitesmoke;
-    }
+/*MEDIA QUERY FOR LARGE DESKTOP VIEWPORTS*/
+@media screen and (min-width: 1921px), and print {
+
 }
 
+/*MEDIA QUERY FOR PRINT*/
+@media print {
 
-
+    body {
+        background-color: #fff;
+        color:#000;
+    }
+}
