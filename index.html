@@ -1,90 +1,235 @@
+<!--
+Diana Ruiz
+10/10/26
+index.html
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Meta data-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Diana's Kictchen</title>
-    <!--Favicon-->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Home-Diana's Kitchen</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-    <!--Header area for the logo, business name, and navigation links-->    
-        <h1 class="website-title"><a href="index.html">DIANA'S KITCHEN</a></h1>
-
         <nav class="navbar">
-            <!--Navigation Menu-->
-            <ul class="nav-links">
+            <!--LOGO-->
+            <div class="logo"><h1>Diana's Kitchen</h1></div>
+            
+            <!--NAVIGATION MENU-->
+            <ul class="nav-links"> 
 
-                <!--Navigation Menus-->
+                <!--USING CHECKBOX HACK-->
+                <input type="checkbox" id="checkbox_toggle"/>
+                <label for="checkbox_toggle" class="hamburger">☰</label>
+
+                <!--NAVIGATION MENUS-->
                 <div class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li> <a href="about.html">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="services">            
+                        <a href="#">Lessons</a>
+                        <!--DROPDOWN MENU--> 
+                        <ul class="dropdown">
+                            <li> <a href="fall2026/lesson1/labs/lab2">Lab 1</a></li>
+                            <li> <a href="fall2026/lesson2/labs/lab2">Lab 2</a></li>
+                            <li> <a href="fall2026/lesson3/labs/lab2">Lab 3</a></li>
+                            <li> <a href="fall2026/lesson4/labs/lab2">Lab 4</a></li>
+                            <li> <a href="fall2026/lesson5/labs/lab2/">Lab 5</a></li>
+                            <li> <a href="fall2026/lesson6/labs/lab2/">Lab 6</a></li>
+                            <li> <a href="fall2026/lesson7/labs/lab2/">Lab 7</a></li>
+                            <li> <a href="fall2026/lesson8/labs/lab2/">Lab 8</a></li>
+                            <li> <a href="fall2026/lesson9/labs/lab2/">Lab 9</a></li>
+                            <li> <a href="fall2026/lesson10/labs/lab2/">Lab 10</a></li>
+                            <li> <a href="fall2026/lesson11/labs/lab2/">Lab 11</a></li>
+                            <li> <a href="fall2026/lesson12/labs/lab2/">Lab 12</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="#">Notes</a></li>
+                    <li><a href="#">Contact</a></li>
+                </div>
+            </ul>
+        </nav> 
 
-                    <li class="services">
-                    <a href="#">Lessons</a><!--'#' tells browser not to change the pages, just jump back to the top of this page.-->
-                    <!--DROPDOWN MENU-->
-                    <ul class="dropdown">
-                        <li> <a href="fall2026/lesson1/labs/lab2">Lab1</a></li>
-                        <li> <a href="fall2026/lesson2/labs/lab2">Lab2</a></li>
-                        <li> <a href="fall2026/lesson3/labs/lab2">Lab3</a></li>
-                        <li> <a href="fall2026/lesson4/labs/lab2">Lab4</a></li>
-                        <li> <a href="fall2026/lesson5/labs/lab2/">Lab5</a></li>
-                        <li> <a href="fall2026/lesson6/labs/lab2/">Lab6</a></li>
-                        <li> <a href="fall2026/lesson7/labs/lab2/">Lab7</a></li>
-                        <li> <a href="fall2026/lesson8/labs/lab2/">Lab8</a></li>
-                        <li> <a href="fall2026/lesson9/labs/lab2/">Lab9</a></li>
-                        <li> <a href="fall2026/lesson10/labs/lab2/">Lab10</a></li>
-                        <li> <a href="fall2026/lesson11/labs/lab2/">Lab11</a></li>
-                        <li> <a href="fall2026/lesson12/labs/lab2/">Lab12</a></li>
-                    </ul>
-
-                    <li> <a href="contact.html">Contact</a></li>
-                    <li> <a href="blog.html">Blog</a></li> 
-                </div>    
-            </ul>    
-        </nav>
+        <div class="header_text">
+            <h2>My First Website</h2>
+            <p>Welcome To My Page</p>
+        </div>      
     </header>
 
-    <!--Main webpage content goes here-->
-    <main>
+<main>
+    <div>
+        <section>
+            <article id="about">
+                <h2>ABOUT ME</h2>
+                <p>I'm Diana Ruiz. I am currently pursuing a website development degree at Gwinnett Technical College. I want to learn to make
+                    websites because I enjoy coding, become happy when my code works and I comprehend what's happening under the hood. 
+                    My hobbies include the outdoors and playing guitar. I hope that by the end of this semester I can code simple websites. 
+                    Thanks for stopping by.
+                </p>
+           </article> 
+            <figure id="about-pic">
+                <img src="images/about-image-diana.png" alt="Photo of Diana Ruiz">
+            </figure>
+        </section>
 
-        <div id="intro-pic">
-            <img src="images/adding-final-touches.jpg" alt="chef adding sauce to a dish">
-        </div>
-        
-        <div id="welcome-message">
-            <h2 class="mobile-h2">Welcome To My First Webiste</h2>
-            <p>Cooking is a creative and complex process. I recently discovered that behind a tasty dish is a science 
-               that incorporates temperature, weights, tools, and knowledge on how to incorporate food elements with 
-               each other in order to create a balanced flavor profile and appearance. My goal is to learn about cooking 
-               and not to become overwhelmed with expectations and the superfluous information that is out there.
-            </p>
-        </div>
-       
-        <h2 class="mobile-h2">My Dishes</h2>
+        <section>
+            <article id="about-webpage">  
+                <h2>ABOUT MY PAGE</h2>
+                <p>For my first webpage, I decided to center the theme on cooking. I've been cooking for a while and 
+                    recently began choosing receipes from two or three YouTube chefs. I figure that I would choose a handful 
+                    of receipes to master and give a little attention to the science and cooking techniques used. Why?
+                    I think it will help me level up my skills in the kitchen. My webpage will be my digital food journal.   
+                </p>
+                <aside class="desktop">
+                    <h3>Did You Know?</h3>
+                    <p>According to a servey study, the average person knows roughly 15 recipes.</p>
+                </aside>          
+            </article>
+        </section>
 
-        <div id="breakfast">
-            <img src="images/breakfast-burrito.jpeg" alt="Picture of a breakfast burrito above the word 'Breakfast'">
-            <h3>Breakfast</h3>
-        </div>
-        <div id="dinner">
-            <img src="images/pallea.jpg" alt="Picture of pallea above the word 'Dinner'">
-            <h3>Dinner</h3>
-        </div>
-        <div id="dessert">
-            <img src="images/cheesecake.jpeg" alt="Picture of a slice of cheesecake above the word 'Desserts'">
-            <h3>Dessert</h3>
-        </div>
-    </main>
+        <section id="food-gallery">
+            <figure class="frame">
+                <img src="images/food-4.png" alt="Breakfast Burritto">
+                <figcaption class="pic-text">Breakfast</figcaption>
+            </figure>
+            
+            <figure class="frame">
+                <img src="images/food-2.png" alt="pizza">
+                <figcaption class="pic-text">Lunch</figcaption>
+            </figure>
+            
+            <figure class="frame">
+                <img src="images/food-5.png" alt="pasta">
+                <figcaption class="pic-text">Dinner</figcaption>
+            </figure>
 
+            <figure class="frame">
+                   <img src="images/food-1.png" alt="cheese cake">
+                <figcaption class="pic-text">Dessert</figcaption>
+            </figure>
+        </section>
+
+        <section id="meal-plan">
+            <div class="mobile-tablet"><!-- List for mobile and tablet viewports -->
+                <h2>Weekly Meal Plan</h2>
+                <!-- Breakfast Section-->
+                <h3>Breakfast</h3>
+                <p>Sun:&nbsp; Restaurant</p>
+                <p>Mon:&nbsp; Oatmeal</p>
+                <p>Tue:&nbsp; Burrito</p>
+                <p>Wed:&nbsp; Eggs&Toast</p>
+                <p>Thur:&nbsp; Burrito</p>
+                <p>Fri:&nbsp;  Oatmeal</p>
+                <p>Sat:&nbsp;  French Toast</p>
+
+                <!-- Lunch Section -->
+                <h3>Lunch</h3>
+                <p>Sun:&nbsp; Restaurant</p>
+                <p>Mon:&nbsp; Grilled Chicken Salad</p>
+                <p>Tue:&nbsp; Grilled Chicken Salad</p>
+                <p>Wed:&nbsp; Beef & Rice Bowl</p>
+                <p>Thur:&nbsp; Beef & Rice Bowl</p>
+                <p>Fri:&nbsp; Philly Cheese Steak Sandwich</p>
+                <p>Sat:&nbsp; Philly Cheese Steak Sandwich</p>
+                
+                <!-- Dinner Section -->
+                <h3>Dinner</h3>
+                <p>Sun:&nbsp; Restaurant</p>
+                <p>Mon:&nbsp; Seared Scallops</p>
+                <p>Tue:&nbsp; Seared Scallops</p>
+                <p>Wed:&nbsp; Chicken Enchiladas</p>
+                <p>Thur:&nbsp; Chicken Enchiladas</p>
+                <p>Fri:&nbsp; Chili</p>
+                <p>Sat:&nbsp; Chili</p>     
+            </div>
+        </section> 
+
+        <div class="desktop">
+            <table><!-- Menu Plan-->
+                <caption>Weekly Meal Plan</caption>
+                <tr><!-- Row 1 -->
+                    <th>Meal</th>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesdsay</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+
+                <tr><!-- Row 2 -->
+                    <td>Breakfast</td>
+                    <td>Restaurant</td>
+                    <td>Oatmeal</td>
+                    <td>Burrito</td>
+                    <td>Eggs & Toast</td>
+                    <td>Burrito</td>
+                    <td>Oatmeal</td>
+                    <td>French Toast</td>  
+                </tr>
+
+                <tr><!-- Row 3 -->
+                    <td>Lunch</td>
+                    <td>Restaurant</td>
+                    <td>Grilled Chicken Salad</td>
+                    <td>Grilled Chicken Salad</td>
+                    <td>Beef & Rice Bowl</td>
+                    <td>Beef & Rice Bowl</td>
+                    <td>Philly Cheese Steak Sandwich</td>
+                    <td>Philly Cheese Steak Sandwich</td>
+                </tr>
+
+                <tr><!-- Row 4 -->
+                    <td>Dinner</td>
+                    <td>Restaurant</td>
+                    <td>Seared Scallops</td>
+                    <td>Seared Scallops</td>
+                    <td>Chicken Enchiladas</td>
+                    <td>Chicken Enchiladas</td>
+                    <td>Chili</td>
+                    <td>Chili</td>
+                </tr>           
+            </table>
+        </div>
+        <!--CONTACT-->
+        <div id="form-wrapper">
+            <form><!-- Start Form-->
+                <h2>CONTACT</h2>
+                <fieldset>
+                    <legend>Sign Up for Free Recipes</legend>
+                    <label for="fName">First Name:</label>
+                    <input type="text" id="fName" name="fName" required>
+
+                    <label for="lName">Last Name:</label>
+                    <input type="text" id="lName" name="lName" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit" id="submit-email" value="send" class="btn">Send</button>
+                    
+                    <label for="comments">Send In Your Comments</label>
+                    <textarea id="comments" name="comments" rows="5" cols="35"></textarea>
+                    <button type="submit"  id="submit-comments" value="send"  class="btn">Send</button> 
+                </fieldset>
+            </form>
+            <!--MAP-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.161808964991!2d-84.06851596054926!3d33.96268032256703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5bcfd0ff27f11%3A0x6c3cdec22c110924!2sGwinnett%20Technical%20College!5e0!3m2!1sen!2sus!4v1791336098467!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="map"></iframe>
+        </div>
+    </div>
+</main>
+
+    <!--Footer-->
     <footer>
-    <!--Company logo, copyright information, and contact details-->
-        <p>&copy; 2026 Diana's Kitchen. All rights reserved.</p>          
-        <a href="index.html"><img src="images/dianas-kitchen-logo.png" alt="Diana's Kitchen Logo"></a>  
-        <p><a href="#" class="footer-button">Back to top &#129093;</a></p>  
-    </footer> 
+        <p>&copy; 2026. Diana's Kitchen.</p>
+        <p>Website created by Diana Ruiz</p>  
+    </footer>
 </body>
 </html>
+
