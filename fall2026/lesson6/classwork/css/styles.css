@@ -1,0 +1,32 @@
+/*Small smartphone*/
+@media  (max-width: 480px) {
+    body { 
+        background-color: black; 
+        color:red;
+    }
+}
+
+/*Large smartphone and tablets*/
+@media (min-width:481px) and (max-width: 768px) {
+    body { 
+        background-color: blue; 
+        color:white;
+    }
+}
+
+/*Tablets in landscape orientation, laptops, and small desktop monitors*/
+@media (min-width: 769px) and (max-width: 1279px) {
+    body { 
+        background-color: yellow; 
+        color:darkblue;
+    }
+}
+
+
+/*Large desktop monitors*/
+@media (min-width: 1280px) {
+    body { 
+        background-color: purple; 
+        color:whitesmoke;
+    }
+}
