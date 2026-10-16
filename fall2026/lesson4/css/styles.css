@@ -1,0 +1,31 @@
+*{margin: 0;}
+
+nav{
+    width: 100vw;
+    text-align: right;
+    background-color: green; 
+}
+
+nav li {
+    display: inline-block;
+    
+}
+
+nav a {
+    text-decoration: none;
+    padding-left: 1em;
+    font-weight: bold;
+    font-size: .85em;
+    color:white
+}
+header {
+    background-color: black;
+}
+header h1 {
+    text-align: center;
+    color:white;
+}
+
+header p{
+    text-align: center;
+}
