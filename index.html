@@ -1,37 +1,43 @@
 <!--
-Diana Ruiz
-10/10/26
-index.html
+Student: Diana Ruiz
+Updated on: 10/24/26
+File Name: index.html
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FONTS 
+    font-family: "Playfair Display", serif;
+    font-family: "Roboto", sans-serif;
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Home-Diana's Kitchen</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <!--LOGO-->
-            <div class="logo"><h1>Diana's Kitchen</h1></div>
+            <div class="logo">
+                <h1>DK</h1>
+            </div>
             
             <!--NAVIGATION MENU-->
             <ul class="nav-links"> 
 
                 <!--USING CHECKBOX HACK-->
                 <input type="checkbox" id="checkbox_toggle"/>
-                <label for="checkbox_toggle" class="hamburger">☰</label>
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
                 <!--NAVIGATION MENUS-->
                 <div class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li class="services">            
                         <a href="#">Lessons</a>
                         <!--DROPDOWN MENU--> 
@@ -51,159 +57,134 @@ index.html
                         </ul> 
                     </li>
                     <li><a href="#">Notes</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#form-grid">Contact</a></li>
                 </div>
             </ul>
         </nav> 
 
         <div class="header_text">
-            <h2>My First Website</h2>
-            <p>Welcome To My Page</p>
+            <h2>My Home Page</h2>
+            <p>welcome to my page</p>
         </div>      
     </header>
 
-<main>
-    <div>
-        <section>
-            <article id="about">
-                <h2>ABOUT ME</h2>
-                <p>I'm Diana Ruiz. I am currently pursuing a website development degree at Gwinnett Technical College. I want to learn to make
-                    websites because I enjoy coding, become happy when my code works and I comprehend what's happening under the hood. 
-                    My hobbies include the outdoors and playing guitar. I hope that by the end of this semester I can code simple websites. 
-                    Thanks for stopping by.
-                </p>
-           </article> 
+    <main id="container">
+        <div class="grid">
             <figure id="about-pic">
                 <img src="images/about-image-diana.png" alt="Photo of Diana Ruiz">
             </figure>
-        </section>
-
-        <section>
-            <article id="about-webpage">  
-                <h2>ABOUT MY PAGE</h2>
-                <p>For my first webpage, I decided to center the theme on cooking. I've been cooking for a while and 
-                    recently began choosing receipes from two or three YouTube chefs. I figure that I would choose a handful 
-                    of receipes to master and give a little attention to the science and cooking techniques used. Why?
-                    I think it will help me level up my skills in the kitchen. My webpage will be my digital food journal.   
+            <article id="about">
+                <h2 id="about-h2">About</h2>
+                <p>I'm Diana Ruiz. I am currently pursuing a website development degree at Gwinnett Technical College. 
+                I chose this discipline because coding is engaging and fun. I see it as an artistic expression and a process that 
+                involves organization, planning, and style. It seems like a big endeavor, but I think coding can refine 
+                other areas of my life. By the end of this class, I hope to be able to create simple websites and have good 
+                foundational knowledge. Outside of school, I enjoy spending time outdoors, watching movies, and cooking.
                 </p>
-                <aside class="desktop">
-                    <h3>Did You Know?</h3>
-                    <p>According to a servey study, the average person knows roughly 15 recipes.</p>
-                </aside>          
-            </article>
-        </section>
+            </article> 
+        </div>
 
+        <div class="grid">
+            <article id="about-webpage">  
+                <h2>My Webpage</h2>
+                <p>For my first webpage, I decided to center the theme on cooking. I've been cooking for a while and 
+                        recently began choosing receipes from two or three YouTube chefs. I figure that I would choose a handful 
+                        of receipes to master and give a little attention to the science and cooking techniques used. Why?
+                        I think it will help me level up my skills in the kitchen. My webpage will be my digital food journal.   
+                </p>        
+            </article>
+            <aside class="tab-desk">
+                <h3>Did You Know?</h3>
+                <p>According to a servey study, the average person knows roughly 15 recipes.</p>
+            </aside>  
+        </div>
+
+        <h2 id="explore">More To Explore</h2>
         <section id="food-gallery">
             <figure class="frame">
                 <img src="images/food-4.png" alt="Breakfast Burritto">
                 <figcaption class="pic-text">Breakfast</figcaption>
             </figure>
-            
+                
             <figure class="frame">
                 <img src="images/food-2.png" alt="pizza">
                 <figcaption class="pic-text">Lunch</figcaption>
             </figure>
-            
+                
             <figure class="frame">
                 <img src="images/food-5.png" alt="pasta">
                 <figcaption class="pic-text">Dinner</figcaption>
             </figure>
 
             <figure class="frame">
-                   <img src="images/food-1.png" alt="cheese cake">
+                <img src="images/food-1.png" alt="cheese cake">
                 <figcaption class="pic-text">Dessert</figcaption>
             </figure>
         </section>
 
-        <section id="meal-plan">
-            <div class="mobile-tablet"><!-- List for mobile and tablet viewports -->
-                <h2>Weekly Meal Plan</h2>
-                <!-- Breakfast Section-->
-                <h3>Breakfast</h3>
-                <p>Sun:&nbsp; Restaurant</p>
-                <p>Mon:&nbsp; Oatmeal</p>
-                <p>Tue:&nbsp; Burrito</p>
-                <p>Wed:&nbsp; Eggs&Toast</p>
-                <p>Thur:&nbsp; Burrito</p>
-                <p>Fri:&nbsp;  Oatmeal</p>
-                <p>Sat:&nbsp;  French Toast</p>
+        <div class="mobile-tab"> <!-- List for mobile and tablet viewports -->
+            <h2>Menu</h2>
+            <!-- Breakfast Section-->
+            <h3>Breakfast</h3>
+                <ul class="meal-options">
+                    <li>Sausage, Egg, &amp; Cheese Burrito</li>
+                    <li>Yogurt Parfait with an Egg & Cheese Muffin</li>
+                    <li>Fruit & Mapel Oatmeal</li>
+                </ul>
 
                 <!-- Lunch Section -->
                 <h3>Lunch</h3>
-                <p>Sun:&nbsp; Restaurant</p>
-                <p>Mon:&nbsp; Grilled Chicken Salad</p>
-                <p>Tue:&nbsp; Grilled Chicken Salad</p>
-                <p>Wed:&nbsp; Beef & Rice Bowl</p>
-                <p>Thur:&nbsp; Beef & Rice Bowl</p>
-                <p>Fri:&nbsp; Philly Cheese Steak Sandwich</p>
-                <p>Sat:&nbsp; Philly Cheese Steak Sandwich</p>
-                
+                <ul class="meal-options">
+                    <li>Beef Stir Fry</li>
+                    <li>Grilled Chicken Salad</li>
+                    <li>Philly Cheesesteak Sandwich</li>
+                </ul>
+                    
                 <!-- Dinner Section -->
                 <h3>Dinner</h3>
-                <p>Sun:&nbsp; Restaurant</p>
-                <p>Mon:&nbsp; Seared Scallops</p>
-                <p>Tue:&nbsp; Seared Scallops</p>
-                <p>Wed:&nbsp; Chicken Enchiladas</p>
-                <p>Thur:&nbsp; Chicken Enchiladas</p>
-                <p>Fri:&nbsp; Chili</p>
-                <p>Sat:&nbsp; Chili</p>     
-            </div>
-        </section> 
+                <ul class="meal-options">
+                    <li>Tuna Salad</li>
+                    <li>Seared Scallops</li>
+                    <li>Chicken Enchiladas</li>
+                </ul>
+        </div>
 
         <div class="desktop">
             <table><!-- Menu Plan-->
-                <caption>Weekly Meal Plan</caption>
+                <caption>Menu</caption>
                 <tr><!-- Row 1 -->
-                    <th>Meal</th>
-                    <th>Sunday</th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesdsay</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                    <th>Saturday</th>
+                    <th>Breakfast</th>
+                    <th>Lunch</th>
+                    <th>Dinner</th>
                 </tr>
 
                 <tr><!-- Row 2 -->
-                    <td>Breakfast</td>
-                    <td>Restaurant</td>
-                    <td>Oatmeal</td>
-                    <td>Burrito</td>
-                    <td>Eggs & Toast</td>
-                    <td>Burrito</td>
-                    <td>Oatmeal</td>
-                    <td>French Toast</td>  
+                    <td>Suasage, Egg, & Cheese Buttiro</td>
+                    <td>Beef Stir Fry</td>
+                    <td>Philly Cheese Steak Sandwich</td> 
                 </tr>
 
                 <tr><!-- Row 3 -->
-                    <td>Lunch</td>
-                    <td>Restaurant</td>
+                    <td>Fruit & Mapel Oatmeal</td> 
+                    <td>Seared Scallops</td>
                     <td>Grilled Chicken Salad</td>
-                    <td>Grilled Chicken Salad</td>
-                    <td>Beef & Rice Bowl</td>
-                    <td>Beef & Rice Bowl</td>
-                    <td>Philly Cheese Steak Sandwich</td>
-                    <td>Philly Cheese Steak Sandwich</td>
                 </tr>
 
                 <tr><!-- Row 4 -->
-                    <td>Dinner</td>
-                    <td>Restaurant</td>
-                    <td>Seared Scallops</td>
-                    <td>Seared Scallops</td>
+                    <td>Yogurt Parfait, Eggs, and Bacon</td>
+                    <td>Tuna Salad</td>
                     <td>Chicken Enchiladas</td>
-                    <td>Chicken Enchiladas</td>
-                    <td>Chili</td>
-                    <td>Chili</td>
                 </tr>           
             </table>
         </div>
         <!--CONTACT-->
-        <div id="form-wrapper">
+        <div id="form-grid">
+             <!--MAP-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.161808964991!2d-84.06851596054926!3d33.96268032256703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5bcfd0ff27f11%3A0x6c3cdec22c110924!2sGwinnett%20Technical%20College!5e0!3m2!1sen!2sus!4v1791336098467!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="map"></iframe>
             <form><!-- Start Form-->
                 <h2>CONTACT</h2>
                 <fieldset>
-                    <legend>Sign Up for Free Recipes</legend>
+                    <legend>Sign Up For Free Recipes</legend>
                     <label for="fName">First Name:</label>
                     <input type="text" id="fName" name="fName" required>
 
@@ -214,17 +195,13 @@ index.html
                     <input type="email" id="email" name="email" required>
                     <button type="submit" id="submit-email" value="send" class="btn">Send</button>
                     
-                    <label for="comments">Send In Your Comments</label>
+                    <label for="comments">Submit your comments</label>
                     <textarea id="comments" name="comments" rows="5" cols="35"></textarea>
                     <button type="submit"  id="submit-comments" value="send"  class="btn">Send</button> 
                 </fieldset>
             </form>
-            <!--MAP-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.161808964991!2d-84.06851596054926!3d33.96268032256703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5bcfd0ff27f11%3A0x6c3cdec22c110924!2sGwinnett%20Technical%20College!5e0!3m2!1sen!2sus!4v1791336098467!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="map"></iframe>
         </div>
-    </div>
-</main>
-
+    </main>
     <!--Footer-->
     <footer>
         <p>&copy; 2026. Diana's Kitchen.</p>
@@ -232,4 +209,5 @@ index.html
     </footer>
 </body>
 </html>
+
 
