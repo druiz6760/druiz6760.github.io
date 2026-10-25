@@ -1,7 +1,7 @@
 /*
-Diana Ruiz
-10/10/26
-styles.css
+Student: Diana Ruiz
+Updated on: 10/24/26
+File Name: styles.css
 */
 
 /*CSS RESET*/
@@ -11,16 +11,14 @@ styles.css
     box-sizing: border-box;
 }
 
-/*GLOBAL STYLE RULES*/
-body {
-    font-family:  Arial, sans-serif ;
-    background-color: #fff;
-}
-
 img {
     max-width: 100%;
     display: block;
-    border-radius: 8px;
+}
+
+/*GLOBAL STYLE RULES*/
+body {
+    background-color: #fbfaf8;  
 }
 
 a {
@@ -31,8 +29,11 @@ li {
     list-style: none;
 }
 
+/*Style rules for mobile viewport*/
+
 header {
-     background-image: url(../images/hero-v1.png); height: 60vh; 
+     background-image: url(../images/hero-image.jpg); 
+     height: 60vh;
      background-repeat: no-repeat;
      background-position: center center;/*Centers the image*/
      background-size: cover;/*Scales the image to cover the entire element*/
@@ -40,10 +41,10 @@ header {
 
 .header_text {
     text-align: center;
-    color: white;
-    margin-top: 1%;
-    font-family: "Roboto", sans-serif;
-    text-shadow: 2px 2px #292933;
+    color: #fbfaf8;
+    font-size: 1.25em;
+    display: block;
+    text-shadow: 1px 0.5px #000;
 }
 
 /*NAVBAR STYLING STARTS*/
@@ -53,31 +54,29 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: rgba(43, 47, 50, .2);
-    color: #fff;
 }
 
 .nav-links a {
-    color: #fff;
+    display: none; /*Changed to none for mobile viewport*/
+    color:  #fbfaf8;
+    font-weight: 500;
 }
 
 /*LOGO*/
 .logo {
-    font-size: 25px;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #fbfaf8;
 }
 
 /*NAVBAR MENU*/
 .menu {
-    display: flex;  
-    gap: 1em;
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
+    display: flex; 
+    gap: .2em;
+    font-size: 16px;
 }
 
 .menu li:hover {
-    background-color: #D40405;
+    background-color: #804e49;
     border-radius: 5px;
     transition: 0.3s ease;
 }
@@ -92,7 +91,7 @@ header {
 }
 
 .dropdown {
-    background-color: rgb(212, 4, 5);
+    background-color: #804e49;
     padding: 1em 0;
     position:absolute;/*WITH RESPECT TO PARENT*/
     display: none;
@@ -101,7 +100,7 @@ header {
 }
 
 .dropdown li + li {
-    margin-top: 10%;
+    margin-top: 10px;
 }
 
 .dropdown li {
@@ -111,7 +110,7 @@ header {
 }
 
 .dropdown li:hover {
-    background-color:#990304;
+    background-color: #472b28;
 }
 
 .services:hover .dropdown{
@@ -119,197 +118,198 @@ header {
 }
 
 /*RESPONSIVE NAVBAR MENU STARTS*/
+
 /*CHECKBOX HACK*/
 
+
 input[type=checkbox] {
-    display: none;
+    display: block;
+    float: right; /*Move checkbox to the right*/
 }
 
 /*HAMBURGER MENU*/
 .hamburger {
-    display: none;
-    font-size: 24px;
+    display: block;
+    font-size: 24px; 
     user-select: none;
+    float: right; /*Move hamburger icon to the right*/
+    clear: both;
+    color: #fbfaf8;
 }
 
-main {
-    padding: 2%;
-    font-size: 1.25em;
-    font-family: "Open Sans", sans-serif;
-}
-
-section {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 20px;
-    justify-items: center;
-    border-radius: 6px;
-    margin-bottom: 5%;
-}
-
-#about h2 {
+h2 {
+    font-family: "Playfair Display", serif;
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 3%;
+    font-size: 1.95em;
+    margin-bottom: 2%;
 }
 
-#about p {
-    text-align: justify;  
-    margin-left: 6%;
-    margin-right: 4%;
-}
-
-#about-pic {
-    width: 65%;             
-    margin-left: auto;      
-    margin-right: auto;
-}
-
-#about-webpage {
-    margin: 20px;
-}
-
-#about-webpage h2 {
-   text-align: center;
-   margin-top: 5%;
-   margin-bottom: 3%;
-}
-
-#about-webpage p {
-    text-align: justify;
-}
-
-#food-gallery {
+.grid {
     display: grid;
     grid-template-columns: auto;
-    row-gap: 20px;
+    margin: 5% auto;
+}
+
+#about-pic img {
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.grid p {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: justify;
+    font-size: 1.10em;
+    font-weight: 500;
+}
+
+/*HIDE TAB-DESK CLASS FOR MOBILE VIEWPORT*/
+.tab-desk {
+    display: none;
+}
+
+#food-gallery { /*Should I delete this style rule?*/
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 auto;
 }
 
 .frame {
-    position: relative;/*Pins the content down as a refrence point for element with 'position: absolute'*/
+    position: relative;
     max-width: 450px;
     margin: 2% auto;
 }
 
+#food-gallery img {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
 .pic-text {
-    position: absolute;
+    position:absolute;
     bottom: 0;
-    background: rgb(43, 47, 50, 0.3);
-    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
     width: 100%;
-    padding: 20%;
+    padding: 20px;
     text-align: center;
-    font-family: "Open Sans", sans-serif; ;
     font-size: 1.5em;
     font-weight: bold;
 }
 
-#meal-plan {
-    margin: 3% 4%;
-    border: solid black 2px;
-    border-radius: 8px;
-    background:linear-gradient(135deg, #DFE4E7, #fff);
+.mobile-tab {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+    margin: 5% auto;
+    border: solid 2px #0a122a;
+    background: linear-gradient(#e5e0de, #dc888b);
 }
 
-#meal-plan h2 {
+.mobile-tab  h2 {
+    color: #0a122a;
     text-align: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
 }
 
-#meal-plan h3 {
-    text-align: left;
+.mobile-tab h3 {
+    color: #0a122a;
+    text-align: center;
     font-weight: bold;
-    margin:4px 0;
+    
 }
 
- /*SHOW THE MOBILE CLASS, HIDE THE DESKTOP CLASS*/
- .mobile-tablet {
-    display: block;
- }
-
- .desktop {
-    display: none;
- }
-
- /*FORM SECTION FOR MOBILE VIEWPORT*/
- form {
-    margin-top: 2%;
-    background-color: #E5E5E9;
-    padding: 2%;
-    border-radius: 8px;
- }
-
- form h2 {
+.meal-options li {
+    color: #0a122a;
+    font-weight: 500;
     text-align: center;
- }
+    padding: 2px;
+}
 
- /*STYLE RULES FOR FORM ELEMENTS*/
+/*Hide desktop class*/
+.desktop {
+    display: none;
+}
+
+/*Style rule for the form*/
+
+#form-grid {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+form {
+    margin-top: 1%;
+    padding: 2%;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 1.75em;
+}
+
+/*Style rules for the form elements*/
+
 fieldset, input, textarea {
-    margin-top: 3%;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 3%;
-    border-radius: 4px;
-    border: 1px solid #ccc; 
+    margin: 1%;
+    padding: 1%;
 }
 
 fieldset legend {
-    font-weight: bold;
-    font-size: 1.25em;
+   text-align: center;
+   font-weight: bold;
+   font-size: 1.25em;
 }
 
 label {
     display: block;
-    padding-top: 3%;
+    padding: 2% auto;
+    margin-left: 1%;
 }
 
-#form-wrapper button {
-    width: 25%;
-    margin: 3% auto 0 auto;
+#submit-email, #submit-comments {
     border: none;
+    margin: 2% auto;
     display: block;
     padding: 2%;
-    background-color: #1e1e24;
-    color: white;
+    background-color: orange; /*CHANGE THIS COLOR*/
     font-size: 1em;
     border-radius: 10px;
 }
 
-.map {
+/*.map {
     display: block;
     border: solid 1px #000;
     width: 100%;
-    margin: 4% auto 2% auto;
+    margin: 2% auto;
+}*/
 
+.map {
+    border: solid 1px #000;
+    width: 425px;
+    height: 400px;
+    margin: 4% auto;
 }
 
 /*FOOTER STYLE RULES*/
 footer p {
+    font-family: "Playfair Display", serif;
     text-align: center;
     font-size: .85em;
     display: block;
-    
 }
 
 /*APPLYING MEDIA QUERIES*/
-/*TABLETS IN LANDSCAPE ORIENTATION, LAPTOPS, AND SMALL DESKTOPS MONITORS*/
-@media (min-width: 768px), print {
 
-    header {
-       padding: 2%;
-       width: 100%;
-    }
-
-    .navbar {
-        width: 100%;
-        position: relative;
-    }
-
-    /*STYLE RULES FOR THE  MENU ELEMENTS*/
+/*@media (max-width: 768px) {
     .menu {
         display: none;
-        position:absolute;
+        position: absolute;
         background-color: teal;
         right: 0;
         left: 0;
@@ -323,12 +323,7 @@ footer p {
         transition: 0.3s ease;
     }
 
-    .menu li + li {
-        border: red;
-        margin-top: 12px;
-    }
-
-    input[type=checkbox]:checked ~ .menu {
+    input[type=checkbox]:checked ~.menu {
         display: block;
     }
 
@@ -337,59 +332,293 @@ footer p {
     }
 
     .dropdown {
-        border: red solid;
         left: 10%;
         top: 30px;
-        transform: translateX(35%);
+        transform: translate(35%);
     }
 
-    .dropdown li:hover {
+    .dropdown li:hover{
         background-color: #4c9e9e;
     }
+}*/
 
-    /*TABLET VIEWPORT: SHOW MOBILE-TABLET CLASS , HIDE DESKTOP CLASS*/
+/*TABLETS IN LANDSCAPE ORIENTATION, LAPTOPS, AND SMALL DESKTOPS MONITORS*/
+@media (min-width: 769px) {
 
-    .mobile-tablet {
+    header {
+        padding: 2%;
+    }
+
+    .nav-links a {
+        display: flex;
+        color:  #fbfaf8;
+        font-weight: 500;
+    }
+
+    input[type=checkbox] {
+        display:none;
+    }
+
+    /*HAMBURGER MENU*/
+    .hamburger {
+        display: none;
+    }
+
+    .header_text {
+        margin-top: 5%;
+    }
+
+    h2 {
+        display: block;
+        margin-top: 4%;
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    #about-pic {
+        width: 85%;
+       
+    }
+
+     #about-pic img {
+        border: solid black;
+        margin-top: 4%;
+        margin-bottom: 0%;
+    }
+
+    .grid p {
+        font-family: "Roboto", sans-serif;
+        font-size: 1em;
+    }
+    /*Show tab-desk*/
+    
+    .tab-desk{
         display: block;
     }
-    
-    .desktop {
-        display: hide;
+
+    .tab-desk h3 {
+        text-align: center;
+        margin-top: 18%;
+    }
+
+    .tab-desk p {
+        margin-top: 2%;
+        font-size: 1em;
+    }
+
+    #food-gallery {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap:10px;
+        margin-top: 4%;
+    }
+
+    #form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 4% auto;;
+    }
+
+    .mobile-tab {
+        margin-bottom: 2%;
     }
 
     .map {
-        width: 600px;
-        height: 450px;
+        margin-top: 15%;
+        width: 400px;
+        height: 350px;
     }
 }
 
 /*MEDIA QUERY FOR DESKTOP VIEWPORT*/
-@media screen and (min-width: 1024px), and print {
-    /*DESKTOP VIEWPORT: STYLE RULES FOR HEADER*/
-    header {
+@media screen and (min-width: 1024px) {
 
+    /*Hide tab-desk*/
+    .mobile-tab{
+        display: none;
     }
 
-    /*DESKTOP VIEWPORT: STYLE RULES FOR NAV AREA*/ 
-    nav {
-
-
+    .desktop {
+        display: block;
     }
 
-    .hamburger {
-    display: inline-block;
-    font-size: 24px;
-    user-select: none;
+    #container {
+        margin: 0 auto;
     }
 
-    /*DESKTOP VIEWPORT: STYLE RULES  FOR MAIN CONTENT*/
-    main {
-
+    .grid{
+        grid-column-gap: 40px;
     }
+
+    .grid p {
+      padding: 5% 5%;  
+    }
+
+    /*Style rules for the about section of the webpage*/
+
+    #about-pic {
+        margin-top: 13%;
+    }
+    
+    #about-pic img {
+        width: 40%;
+    }
+    #about-h2 {
+        float: left;
+        margin-left: 2%;
+    }
+
+    #food-gallery {
+        margin-bottom: 5%;
+    }
+
+    /*Style rules for table*/
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 2%;
+    }
+
+    th {
+        background-color: #000;
+        color: white;
+        font-size: 1.5em;
+    }
+    
+    tr:nth-child(odd) {
+        background-color: #ccc;
+    }
+
+    #form-grid {
+        padding-right: 6%;
+        grid-column-gap: 40px;
+    }
+
+    form {
+        margin-top: 18%;
+    }
+
+    .map {
+        border: black solid 2px;
+        width: 600px;
+        height: 400px;
+    }
+
 }
 
 /*MEDIA QUERY FOR LARGE DESKTOP VIEWPORTS*/
-@media screen and (min-width: 1921px), and print {
+@media (min-width: 1921px) {
+  body {
+    margin: 0 10%;
+   }
+
+   header h1 {
+    font-size: 4em;
+   }
+
+   .menu {
+     font-size: 1.5em;
+   }
+
+   .header_text{
+    font-size: 2em;
+   }
+
+   #about-pic img {
+    width: 60%;
+   }
+
+   .grid h2{
+    font-size: 2.5em;
+   }
+
+   #about-h2 {
+    padding-left: 6%;
+   }
+
+   .grid p{
+    font-size: 1.65em;
+    padding-top: 0%;
+   }
+
+   .tab-desk h3 {
+    font-size: 2em;
+   }
+
+   #explore{
+    font-size: 3em;
+   }
+
+   caption {
+    font-size: 3em;
+   }
+
+   th {
+    font-size: 2.5em;
+   }
+
+   td {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+   }
+
+   .map {
+    width: 800px;
+    height: 750px;
+   }
+
+   form h2 {
+    margin-top: 5%;
+    font-size: 2.75em;
+   }
+
+   fieldset {
+    border: red solid;
+    padding: 10% 8%;
+   }
+   fieldset, input, textarea {
+    margin-bottom: 2%;
+    padding-bottom: 6%;
+   }
+
+   textarea {
+    padding: 3% 6%;
+
+   }
+
+   fieldset legend {
+    border: red solid;
+    font-weight: bold;
+    font-size: 2em;
+   }
+
+    label {
+    display: block;
+    font-size: 1.5em;
+    padding-top: 5%;
+   }
+
+   fieldset button {
+
+   }
 
 }
 
