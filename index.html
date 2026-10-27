@@ -1,6 +1,6 @@
 <!--
 Student: Diana Ruiz
-Updated on: 10/24/26
+Updated on: 10/26/26
 File Name: index.html
 -->
 <!DOCTYPE html>
@@ -21,7 +21,38 @@ File Name: index.html
 
 <body>
     <header>
-        <nav class="navbar">
+        <!--MOBILE NAV-->
+        <nav class="mobile-nav"><!--Holds hamburger icon-->
+            <div id="menu-links"><!--Holds links for the hamburger menu-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="services">            
+                    <a href="#">Lessons</a>
+                    <!--DROPDOWN MENU--> 
+                        <ul class="dropdown">
+                            <li> <a href="fall2026/lesson1/labs/lab2">Lab 1</a></li>
+                            <li> <a href="fall2026/lesson2/labs/lab2">Lab 2</a></li>
+                            <li> <a href="fall2026/lesson3/labs/lab2">Lab 3</a></li>
+                            <li> <a href="fall2026/lesson4/labs/lab2">Lab 4</a></li>
+                            <li> <a href="fall2026/lesson5/labs/lab2/">Lab 5</a></li>
+                            <li> <a href="fall2026/lesson6/labs/lab2/">Lab 6</a></li>
+                            <li> <a href="fall2026/lesson7/labs/lab2/">Lab 7</a></li>
+                            <li> <a href="fall2026/lesson8/labs/lab2/">Lab 8</a></li>
+                            <li> <a href="fall2026/lesson9/labs/lab2/">Lab 9</a></li>
+                            <li> <a href="fall2026/lesson10/labs/lab2/">Lab 10</a></li>
+                            <li> <a href="fall2026/lesson11/labs/lab2/">Lab 11</a></li>
+                            <li> <a href="fall2026/lesson12/labs/lab2/">Lab 12</a></li>
+                        </ul> 
+                    </li>
+                <li><a href="#">Notes</a></li>
+                <li><a href="#form-grid">Contact</a></li>
+            </div>
+            <a class="menu-icon"> <!--Anchor element will be used to toggle the hamburger menu-->
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+        <nav class="navbar"><!--TABLET, DESKTOP NAVIGATION-->
             <!--LOGO-->
             <div class="logo">
                 <h1>DK</h1>
@@ -29,10 +60,6 @@ File Name: index.html
             
             <!--NAVIGATION MENU-->
             <ul class="nav-links"> 
-
-                <!--USING CHECKBOX HACK-->
-                <input type="checkbox" id="checkbox_toggle"/>
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
                 <!--NAVIGATION MENUS-->
                 <div class="menu">
@@ -209,5 +236,6 @@ File Name: index.html
     </footer>
 </body>
 </html>
+
 
 
