@@ -1,17 +1,20 @@
 <!--
 Student: Diana Ruiz
-Updated on: 10/26/26
+Updated on: 10/27/26
 File Name: index.html
+-->
+<!-- FONTS 
+font-family: "Playfair Display", serif;
+font-family: "Roboto", sans-serif;
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FONTS 
-    font-family: "Playfair Display", serif;
-    font-family: "Roboto", sans-serif;
-    -->
+    <meta name="author" content="Diana Ruiz">
+    <meta name="description" content="Diana's Kitchen is an online blog about Diana's cooking journey, thoughts, and ideas.">
+    <meta name="keywords" content="kitchen, cooking, recipes, food">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Home-Diana's Kitchen</title>
@@ -21,8 +24,13 @@ File Name: index.html
 
 <body>
     <header>
-        <!--MOBILE NAV-->
+        <!--MOBILE NAVIGATION-->
         <nav class="mobile-nav"><!--Holds hamburger icon-->
+            <!--LOGO-->
+            <div class="mobile-logo">
+                <h1>DK</h1>
+            </div>
+
             <div id="menu-links"><!--Holds links for the hamburger menu-->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -47,8 +55,8 @@ File Name: index.html
                 <li><a href="#">Notes</a></li>
                 <li><a href="#form-grid">Contact</a></li>
             </div>
-            <a class="menu-icon"> <!--Anchor element will be used to toggle the hamburger menu-->
-                <div>&#9776;</div>
+            <a class="menu-icon" onclick="hamburger()"> <!--Anchor element will be used to toggle the hamburger menu-->
+                <div>☰</div>
             </a>
         </nav>
 
@@ -231,11 +239,55 @@ File Name: index.html
     </main>
     <!--Footer-->
     <footer>
-        <p>&copy; 2026. Diana's Kitchen.</p>
-        <p>Website created by Diana Ruiz</p>  
+        <div class="copyright">
+            <p>&copy; 2026. Diana's Kitchen.</p>
+            <p>Website created by Diana Ruiz</p> 
+        </div> 
+        
+        <!--FOOTER NAVIGATION-->
+        <section id="footer-nav">
+            <nav>
+                <h4>My Favorite Chefs</h4>
+                <ul>
+                    <li><a href="https://preppykitchen.com/">Preppy Kitchen</a></li>
+                    <li><a href="https://www.americastestkitchen.com/">AmericasTestKitchen</a></li>
+                    <li><a href="https://www.epicurious.com/">Epicurious</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h4>Kitchen Tools</h4>
+                <ul>
+                    <li><a href="https://www.cooksmarts.com/cooking-guides/create-a-functional-kitchen/20-must-have-kitchen-tools/">Cooksmarts</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul>
+                    <h4>Cooking Techniques</h4>
+                    <li><a href="https://www.thespruceeats.com/cooking-techniques-everyone-should-know-4169657">thespruceeats</a></li>
+                    <li><a href="https://www.wegmans.com/cooking-techniques">Wegmans.com</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h4>Cooking Schools</h4>
+                <ul>
+                    <li><a href="https://asculinaryconcepts.com/">AS Culinary Concepts</a></li>
+                    <li><a href="https://tastebudskitchen.com/alpharetta/">Tastebuds Kitchen</a></li>
+                    <li><a href="https://discover.escoffier.edu/"> Discover Escoffier</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <div class="social">
+            <a href="https://www.facebook.com/ target=_blank"><img src="#" alt="blue and white facebook"></a>
+            <a href="https://www.instagram.com/?hl=en target_blank"><img src="#" alt="instagram"></a>
+        </div>
+
     </footer>
+
+    <script src="/cist1510/scripts/script.js"></script><!--Connectes HTML file to find the JS file.-->    
+
 </body>
 </html>
-
-
-
