@@ -1,6 +1,6 @@
 /*
 Student: Diana Ruiz
-Updated on: 10/26/26
+Updated on: 10/27/26
 File Name: styles.css
 */
 
@@ -31,11 +31,6 @@ li {
 
 /*Style rules for mobile viewport*/
 
-/*Hide menu-links id*/
-#menu-links {
-    display: none;
-}
-
 header {
      background-image: url(../images/hero-image.jpg); 
      height: 60vh;
@@ -44,25 +39,22 @@ header {
      background-size: cover;/*Scales the image to cover the entire element*/
 }
 
-.header_text {
-    text-align: center;
-    color: #fbfaf8;
-    font-size: 1.25em;
-    display: block;
-    text-shadow: 1px 0.5px #000;
+/*Hide tablet, desktop navigation*/
+.navbar {
+    display: none;
 }
 
-/*LOGO*/
-.logo {
+/*MOBILE LOGO*/
+.mobile-logo {
+    display: block;
     font-size: 15px;
     color: #fbfaf8;
 }
 
-/*NAVBAR MENU STYLES REMOVED*/
-
-/*DROPDOWN MENU* STYLES REMOVED/
-
-/*STYLE RULES FOR HAMBURGER MENU*/
+/*Hide menu-links id*/
+#menu-links {
+    display: none;
+}
 
 #menu-links li a {
     color:#fbfaf8;
@@ -77,7 +69,7 @@ header {
     display: block;
     font-size: 24px; 
     user-select: none;
-    float: right; /*Move hamburger icon to the right*/
+    float: right; /*Moves the hamburger icon to the right*/
     clear: both;
     color: #fbfaf8;
 }
@@ -88,6 +80,14 @@ header {
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.header_text {
+    text-align: center;
+    color: #fbfaf8;
+    font-size: 1.25em;
+    display: block;
+    text-shadow: 1px 0.5px #000;
 }
 
 h2 {
@@ -279,6 +279,13 @@ footer p {
         justify-content: space-between;
         padding: 20px;
     }
+
+    .logo {
+        display: block;
+        font-size: 15px;
+        color: #fbfaf8;
+    }
+    
 
     .nav-links a {
         display: inline-block; 
@@ -568,9 +575,9 @@ footer p {
    }
 
    fieldset {
-    border: red solid;
     padding: 10% 8%;
    }
+
    fieldset, input, textarea {
     margin-bottom: 2%;
     padding-bottom: 6%;
@@ -582,7 +589,6 @@ footer p {
    }
 
    fieldset legend {
-    border: red solid;
     font-weight: bold;
     font-size: 2em;
    }
