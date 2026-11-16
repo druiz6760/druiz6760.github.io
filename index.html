@@ -1,87 +1,73 @@
-<!--
-    Student: Diana Ruiz
-    Updated on: 11/16/26
-    Poject Name: Final Project
-    File Name: index.html
+<!-- 
+  Student: Diana Ruiz
+  Updated on: 11/16/26
+  Project Name: Final Project
+  File Name: index.html
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Meta Data-->
-   <meta name="author" content="Diana Ruiz">
-   <meta name="description" content="A responsive website that showcases a student protfolio page about cooking for my web development class.">
-   <meta name="keywords" content="cooking, food, recipes, blog, css, html, javascript, web development, skills">
+  
+  <!-- Meta Data -->
+  <meta name="author" content="Diana Ruiz">
+  <meta name="description" content="A responsive website that showcases a student protfolio page about cooking for my web development class.">
+  <meta name="keywords" content="cooking, food, recipes, blog, css, html, javascript, web development, skills">
+  
   <title>Home | Diana's Kitchen</title>
-  <!--Favicon Link-->
+  
+  <!-- Favicon Link -->
   <link rel="icon" type="image/png" href="images/favicon.v2.png">
-  <!--CSS Stylesheet Link-->
-   <link rel="stylesheet" href="./css/styles.css">
+  
+  <!-- CSS Stylesheet Link -->
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <!--Top Banner Area-->
+
+  <!-- Top Banner Area -->
   <header class="site-header" id="home">
-    <!--Defines the nav bar. Aria-label is for screen readers.-->
+    <!-- Defines the nav bar. Aria-label is for screen readers. -->
     <nav class="navbar" aria-label="Main navigation">
       <a class="logo" href="#home" aria-label="Diana's Kitchen home">
-        <!--Inline container for the logo. Aria-hidden skips out loud reading of content.-->
+        <!-- Inline container for the logo. Aria-hidden skips out loud reading of content. -->
         <span class="logo-mark" aria-hidden="true">D</span>
         <span>Kitchen</span>
       </a>
-      <!--Creates the mobile hamburger button. Toggle open/close interactivity added.-->
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        type="button"
-        aria-label="Open navigation menu"
-        aria-controls="primaryNav"
-        aria-expanded="false"
-      >
-      <!--Three empty lines. CSS styles them into the horizontal lines of a classic hamburger menu icon.-->  
+
+      <!-- Creates the mobile hamburger button. Toggle open/close interactivity added. -->
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="primaryNav" aria-expanded="false">
+        <!-- Three empty lines. CSS styles them into the horizontal lines of a classic hamburger menu icon. -->
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <!--Unordered list holds tha main navigation links-->
+
+      <!-- Unordered list holds the main navigation links -->
       <ul class="nav-list" id="primaryNav">
-        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Home</a></li>
         <li><a href="about.html">About</a></li>
-        
         <li class="has-dropdown">
-          <button
-            class="dropdown-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="classesMenu"
-          >
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="classesMenu">
             Lessons ▾
           </button>
-
           <ul class="dropdown-menu" id="classesMenu" hidden>
-
             <li><a href="./fall2026/lesson1/labs/lab2">Intro Development</a></li>
             <li><a href="./fall2026/lesson2/labs/lab2">Webpage Templates</a></li>
-            <li><a href="./fall2026/lesson3/labs/lab2">Images & Links</a></li>
+            <li><a href="./fall2026/lesson3/labs/lab2">Images &amp; Links</a></li>
             <li><a href="./fall2026/lesson4/labs/lab2">CSS</a></li>
             <li><a href="./fall2026/lesson5/labs/lab2">Mobile Design</a></li>
-            <li><a href="./fall2026/lesson6/labs/lab2">Desktops & Tablets</a></li>
-
+            <li><a href="./fall2026/lesson6/labs/lab2">Desktops &amp; Tablets</a></li>
             <li class="has-submenu">
-              <button
-                class="submenu-toggle"
-                type="button"
-                aria-expanded="false"
-                aria-controls="topicsMenu"
-              >
-                Advanced Topics  ▴
+              <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="topicsMenu">
+                Advanced Topics ▴
               </button>
               <ul class="submenu" id="topicsMenu" hidden>
                 <li><a href="./fall2026/lesson7/labs/lab2">Improve Webpages</a></li>
-                <li><a href="./fall2026/lesson8/labs/lab2">Tables & Forms</a></li>
-                <li><a href="./fall2026/lesson9/labs/lab2">Audio & Video</a></li>
+                <li><a href="./fall2026/lesson8/labs/lab2">Tables &amp; Forms</a></li>
+                <li><a href="./fall2026/lesson9/labs/lab2">Audio &amp; Video</a></li>
                 <li><a href="./fall2026/lesson10/labs/lab2">JavaScript</a></li>
-                <li><a href="./fall2026/lesson11/labs/lab2">Publish, Promote & Maintain</a></li>
+                <li><a href="./fall2026/lesson11/labs/lab2">Publish, Promote &amp; Maintain</a></li>
                 <li><a href="./fall2026/lesson12/labs/lab2">Bootstrap</a></li>
               </ul>
             </li>
@@ -89,43 +75,31 @@
         </li>
         <li><a href="#notes">Notes</a></li>
         <li><a href="#contact">Contact</a></li>
-      </ul>      
+      </ul>
     </nav>
 
     <div class="hero">
       <p class="eyebrow">Create · Taste · Enjoy</p>
       <h1>TURN YOUR PASSION INTO A GREAT MEAL</h1>
-      <p>
-        Explore the exciting world of cooking from scratch.
-      </p>
+      <p>Explore the exciting world of cooking from scratch.</p>
       <a class="button" href="#classes">Explore Our Menu</a>
     </div>
   </header>
-  
+
   <main>
     <section aria-labelledby="about-title">
-      <div class="section-inner" id="about">
+      <div class="section-inner" id="about" id="about">
         <div class="about-image-wrap">
-          <img
-            src="images/diana.png"
-            alt="Diana Ruiz"
-          >
+          <img src="images/diana.png" alt="Diana Ruiz">
         </div>
-
         <div class="bio-card">
           <p class="eyebrow">About Me</p>
           <h2 class="section-heading" id="about-title">Hi, I’m Diana Ruiz.</h2>
           <p>
-            I’m a student at Gwinnett Technical College who is studying website development. 
-            I enjoy coding because it allows people to connect and bring their ideas to the 
-            digital landscape. Creating projects solo or in a group is great fun, and seeing my 
-            skills and understanding grow brings a sense of fulfillment. 
+            I’m a student at Gwinnett Technical College who is studying website development. I enjoy coding because it allows people to connect and bring their ideas to the digital landscape. Creating projects solo or in a group is great fun, and seeing my skills and understanding grow brings a sense of fulfillment.
           </p>
           <p>
-            This semester, I’m studying HTML, CSS, and JavaScript by creating projects that are useful, accessible, 
-            and fun to use. By the end of this semester, I hope to possess the skills that enable the making of simple 
-            and responsive webpages for small businesses in my local community. My long-term goal is to become a front-end 
-            web developer. In the short-term, I would love to work as a freelancer while I pursue my studies.
+            This semester, I’m studying HTML, CSS, and JavaScript by creating projects that are useful, accessible, and fun to use. By the end of this semester, I hope to possess the skills that enable the making of simple and responsive webpages for small businesses in my local community. My long-term goal is to become a front-end web developer. In the short-term, I would love to work as a freelancer while I pursue my studies.
           </p>
           <p>In my spare time, I enjoy cooking, working out, and being outdoors.</p>
           <ul class="tag-list" aria-label="Current skills">
@@ -144,8 +118,7 @@
         <p class="eyebrow">What I’m learning</p>
         <h2 class="section-heading" id="classes-title">Build your web skills</h2>
         <p class="section-intro">
-          Practice the foundations of the web and use them to create responsive,
-          interactive projects.
+          Practice the foundations of the web and use them to create responsive, interactive projects.
         </p>
         <ul class="tag-list">
           <li>HTML structure</li>
@@ -164,12 +137,15 @@
         <p class="section-intro">
           Send a message or explore the map of Gwinnett Technical College.
         </p>
-
         <div class="contact-grid">
           <iframe
             class="map-frame"
             title="Google Map showing address of Gwinnett Technichal College in Lawrenceville, Georgia"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.1619820592!2d-84.06852668737066!3d33.96267587307859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5bcfd0ff27f11%3A0x6c3cdec22c110924!2sGwinnett%20Technical%20College!5e0!3m2!1sen!2sus!4v1794418695974!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.1619820592!2d-84.06852668737066!3d33.96267587307859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5bcfd0ff27f11%3A0x6c3cdec22c110924!2sGwinnett%20Technical%20College!5e0!3m2!1sen!2sus!4v1794418695974!5m2!1sen!2sus"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
@@ -178,28 +154,18 @@
           <form class="contact-form" id="contactForm">
             <h3>Send a message</h3>
             <p>If you are ready for a website that works, send us a message to discuess how we can help.</p>
-
             <div class="form-field">
               <label for="name">Name</label>
               <input id="name" name="name" type="text" autocomplete="name" required>
             </div>
-
             <div class="form-field">
               <label for="email">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autocomplete="email"
-                required
-              >
+              <input id="email" name="email" type="email" autocomplete="email" required>
             </div>
-
             <div class="form-field">
               <label for="message">Message</label>
               <textarea id="message" name="message" required></textarea>
             </div>
-
             <button class="button" type="submit">Send message</button>
             <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
           </form>
@@ -224,7 +190,7 @@
         <ul>
           <li><a href="https://asculinaryconcepts.com/">AS Culinary Concepts</a></li>
           <li><a href="https://tastebudskitchen.com/alpharetta/">Tastebuds Kitchen</a></li>
-          <li><a href="https://discover.escoffier.edu/"> Discover Escoffier</a></li>
+          <li><a href="https://discover.escoffier.edu/">Discover Escoffier</a></li>
         </ul>
       </div>
 
@@ -239,29 +205,19 @@
       <div class="footer-column social-column">
         <h3>Follow along</h3>
         <ul class="social-links">
-          <li>
-            <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" aria-label="Instagram">ig</a>
-          </li>
-          <li>
-            <a href="https://x.com/" aria-label="X">X</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a>
-          </li>
+          <li><a href="https://www.facebook.com/" aria-label="Facebook">f</a></li>
+          <li><a href="https://www.instagram.com/" aria-label="Instagram">ig</a></li>
+          <li><a href="https://x.com/" aria-label="X">X</a></li>
+          <li><a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a></li>
         </ul>
       </div>
     </div>
 
     <p class="copyright">
       &copy; <span id="year"></span> Diana's Kitchen.
-
     </p>
   </footer>
 
-<script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
-
