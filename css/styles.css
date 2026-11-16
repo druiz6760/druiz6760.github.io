@@ -1,4 +1,4 @@
-    :root {
+      :root {
       /*Primary body text and headings*/
       --ink: #142238; 
       /*Secondary text, captions, or subtitles*/
@@ -322,15 +322,12 @@
 
     /*Style rule for more to explore section for desktop,large desktop viewport*/
     
-    #food-gallery { 
+    #grid-food-gallery {
       display: grid;
       grid-template-columns: auto auto;
       gap: 40px;
-      justify-content: center
-    }
-
-    #heading-food-gal{
-      text-align: center;
+      justify-content: center;
+      margin-bottom: 2%;
     }
 
     .frame {
@@ -614,7 +611,7 @@
       /*More to explore section.*/
       #food-gallery { 
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto ;
         margin: 0% auto;
         padding-top: 1%;
         gap: 20px;
@@ -631,6 +628,13 @@
     }
 
     @media (max-width: 420px) {
+
+      /*Style rules for moble viewport more to explore section*/
+      #grid-food-gallery { 
+        display: grid;
+        grid-template-columns: auto;
+      }
+
       .footer-grid {
         grid-template-columns: 1fr;
       }
