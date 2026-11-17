@@ -1,24 +1,29 @@
+<!--
+  Student: Diana Ruiz
+  Updated on: 11/16/26
+  Poject Name: Final Project
+  File Name: about.html
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <!-- Meta Data -->
   <meta name="author" content="Diana Ruiz">
-  <meta name="description" content="A responsive website that showcases a student portfolio page about cooking for my web development class.">
+  <meta name="description" content="A responsive website that showcases a student protfolio page about cooking for my web development class.">
   <meta name="keywords" content="cooking, food, recipes, blog, css, html, javascript, web development, skills">
-
+  
   <title>About | Diana's Kitchen</title>
-
+  
   <!-- Favicon Link -->
   <link rel="icon" type="image/png" href="images/favicon.v2.png">
-
+  
   <!-- CSS Stylesheet Link -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-
   <!-- Top Banner Area -->
   <header class="site-header" id="home">
     <!-- Defines the nav bar. Aria-label is for screen readers. -->
@@ -44,7 +49,7 @@
         <span></span>
       </button>
 
-      <!-- Unordered list holds the main navigation links -->
+      <!-- Unordered list holds tha main navigation links -->
       <ul class="nav-list" id="primaryNav">
         <li><a href="index.html">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -87,7 +92,6 @@
             </li>
           </ul>
         </li>
-
         <li><a href="#notes">Notes</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -96,19 +100,20 @@
     <div class="hero">
       <p class="eyebrow">Create · Taste · Enjoy</p>
       <h1>TURN YOUR PASSION INTO A GREAT MEAL</h1>
-      <p>Explore the exciting world of cooking from scratch.</p>
-      <a class="button" href="#classes">Explore Our Menu</a>
+      <p>
+        Explore the exciting world of cooking from scratch.
+      </p>
+      <a class="button" href="#explore">Explore Our Menu</a>
     </div>
   </header>
-  <main>
 
-    <!-- About Section -->
+  <main>
     <section aria-labelledby="about-title">
       <div class="section-inner" id="about">
         <div class="about-image-wrap">
           <img
             src="images/community-food.jpg"
-            alt="Community food table"
+            alt="img"
           >
         </div>
 
@@ -116,10 +121,13 @@
           <p class="eyebrow">A meal is so much more</p>
           <h2 class="section-heading" id="about-title">About Diana's Kitchen</h2>
           <p>
-            I like to eat delicious food. Eating out can save time and mildly promise a tasty dish; however, there is no guarantee. I decided, with suggestions from family and friends, to try my hand at cooking my own meals. It takes time, planning, and discipline. Yet, I am in control of the quality of ingredients and portions. Overall, it has been worth it.
+            I like to eat delicious food. Eating out can save time and mildly promise a tasty dish; however, there is no guarantee.
+            I decided, with suggestions from family and friends, to try my hand at cooking my own meals. It takes time, planning, and 
+            discipline. Yet, I am in control of the quality of ingredients and portions. Overall, it has been worth it. 
           </p>
           <p>
-            Cooking meals from scratch has taught me to care about quality ingredients, animal welfare, and sustainable farming practices. A meal is so much more. Food can bring people together, allow you to express your creativity and knowledge, and be a gift crafted with care.
+            Cooking meals from scratch has taught me to care about quality ingredients, animal welfare, and sustainable farming practices.
+            A meal is so much more. Food can bring people together, allow you to express your creativity and knowledge, and be a gift crafted with care.
           </p>
           <p>
             I decided to center the theme on cooking from scratch for my first webpage because I want to express my passion for cooking using code.
@@ -130,8 +138,9 @@
       </div>
     </section>
 
-    <!-- More To Explore Section -->
-    <section id="food-gallery" class="contrast-color" aria-labelledby="classes-title">
+      <!-- More to explore section -->
+    <!-- MORE TO EXPLORE SECTION -->
+    <section id="explore" class="contrast-color" aria-labelledby="about-title">
       <div class="section-inner">
         <p class="eyebrow">What I'm Cooking</p>
         <h2 class="section-heading" id="classes-title">More To Explore</h2>
@@ -142,7 +151,7 @@
 
       <div id="grid-food-gallery">
         <figure class="frame">
-          <img src="images/food-4.png" alt="breakfast burrito">
+          <img src="images/food-4.png" alt="breakfast burritto">
           <figcaption class="pic-text">Breakfast</figcaption>
         </figure>
 
@@ -157,7 +166,7 @@
         </figure>
 
         <figure class="frame">
-          <img src="images/food-1.png" alt="cheesecake">
+          <img src="images/food-1.png" alt="cheese cake">
           <figcaption class="pic-text">Dessert</figcaption>
         </figure>
       </div>
@@ -166,7 +175,7 @@
     <!-- Contact Section -->
     <section id="contact" aria-labelledby="contact-title">
       <div class="section-inner">
-        <p class="eyebrow">Ready for your new website</p>
+        <p class="eyebrow">Ready for a your new website</p>
         <h2 class="section-heading" id="contact-title">Contact</h2>
         <p class="section-intro">
           Send a message or explore the map of Gwinnett Technical College.
@@ -175,9 +184,12 @@
         <div class="contact-grid">
           <iframe
             class="map-frame"
-            title="Google Map showing address of Gwinnett Technical College in Lawrenceville, Georgia"
+            title="Google Map showing address of Gwinnett Technichal College in Lawrenceville, Georgia"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.1619820592!2d-84.06852668737066!3d33.96267587307859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5bcfd0ff27f11%3A0x6c3cdec22c110924!2sGwinnett%20Technical%20College!5e0!3m2!1sen!2sus!4v1794418695974!5m2!1sen!2sus"
             style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
@@ -185,7 +197,7 @@
 
           <form class="contact-form" id="contactForm">
             <h3>Send a message</h3>
-            <p>If you are ready for a website that works, send us a message to discuss how we can help.</p>
+            <p>If you are ready for a website that works, send us a message to discuess how we can help.</p>
 
             <div class="form-field">
               <label for="name">Name</label>
@@ -214,7 +226,6 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
@@ -248,10 +259,18 @@
       <div class="footer-column social-column">
         <h3>Follow along</h3>
         <ul class="social-links">
-          <li><a href="https://www.facebook.com/" aria-label="Facebook">f</a></li>
-          <li><a href="https://www.instagram.com/" aria-label="Instagram">ig</a></li>
-          <li><a href="https://x.com/" aria-label="X">X</a></li>
-          <li><a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a></li>
+          <li>
+            <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" aria-label="Instagram">ig</a>
+          </li>
+          <li>
+            <a href="https://x.com/" aria-label="X">X</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a>
+          </li>
         </ul>
       </div>
     </div>
