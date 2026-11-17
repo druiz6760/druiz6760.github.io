@@ -1,7 +1,7 @@
-<!-- 
+<!--
   Student: Diana Ruiz
   Updated on: 11/16/26
-  Project Name: Final Project
+  Poject Name: Final Project
   File Name: index.html
 -->
 <!DOCTYPE html>
@@ -9,22 +9,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- Meta Data -->
   <meta name="author" content="Diana Ruiz">
   <meta name="description" content="A responsive website that showcases a student protfolio page about cooking for my web development class.">
   <meta name="keywords" content="cooking, food, recipes, blog, css, html, javascript, web development, skills">
-  
+
   <title>Home | Diana's Kitchen</title>
-  
+
   <!-- Favicon Link -->
   <link rel="icon" type="image/png" href="images/favicon.v2.png">
-  
+
   <!-- CSS Stylesheet Link -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-
   <!-- Top Banner Area -->
   <header class="site-header" id="home">
     <!-- Defines the nav bar. Aria-label is for screen readers. -->
@@ -36,21 +35,35 @@
       </a>
 
       <!-- Creates the mobile hamburger button. Toggle open/close interactivity added. -->
-      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="primaryNav" aria-expanded="false">
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="primaryNav"
+        aria-expanded="false"
+      >
         <!-- Three empty lines. CSS styles them into the horizontal lines of a classic hamburger menu icon. -->
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <!-- Unordered list holds the main navigation links -->
+      <!-- Unordered list holds tha main navigation links -->
       <ul class="nav-list" id="primaryNav">
         <li><a href="#about">Home</a></li>
         <li><a href="about.html">About</a></li>
+
         <li class="has-dropdown">
-          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="classesMenu">
+          <button
+            class="dropdown-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="classesMenu"
+          >
             Lessons ▾
           </button>
+
           <ul class="dropdown-menu" id="classesMenu" hidden>
             <li><a href="./fall2026/lesson1/labs/lab2">Intro Development</a></li>
             <li><a href="./fall2026/lesson2/labs/lab2">Webpage Templates</a></li>
@@ -58,8 +71,14 @@
             <li><a href="./fall2026/lesson4/labs/lab2">CSS</a></li>
             <li><a href="./fall2026/lesson5/labs/lab2">Mobile Design</a></li>
             <li><a href="./fall2026/lesson6/labs/lab2">Desktops &amp; Tablets</a></li>
+
             <li class="has-submenu">
-              <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="topicsMenu">
+              <button
+                class="submenu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="topicsMenu"
+              >
                 Advanced Topics ▴
               </button>
               <ul class="submenu" id="topicsMenu" hidden>
@@ -81,25 +100,36 @@
     <div class="hero">
       <p class="eyebrow">Create · Taste · Enjoy</p>
       <h1>TURN YOUR PASSION INTO A GREAT MEAL</h1>
-      <p>Explore the exciting world of cooking from scratch.</p>
-      <a class="button" href="#classes">Explore Our Menu</a>
+      <p>
+        Explore the exciting world of cooking from scratch.
+      </p>
+      <a class="button" href="about.html#explore">Explore Our Menu</a>
     </div>
   </header>
-
-  <main>
+    <main>
     <section aria-labelledby="about-title">
       <div class="section-inner" id="about" id="about">
         <div class="about-image-wrap">
-          <img src="images/diana.png" alt="Diana Ruiz">
+          <img
+            src="images/diana.png"
+            alt="Diana Ruiz"
+          >
         </div>
+
         <div class="bio-card">
           <p class="eyebrow">About Me</p>
           <h2 class="section-heading" id="about-title">Hi, I’m Diana Ruiz.</h2>
           <p>
-            I’m a student at Gwinnett Technical College who is studying website development. I enjoy coding because it allows people to connect and bring their ideas to the digital landscape. Creating projects solo or in a group is great fun, and seeing my skills and understanding grow brings a sense of fulfillment.
+            I’m a student at Gwinnett Technical College who is studying website development. 
+            I enjoy coding because it allows people to connect and bring their ideas to the 
+            digital landscape. Creating projects solo or in a group is great fun, and seeing my 
+            skills and understanding grow brings a sense of fulfillment. 
           </p>
           <p>
-            This semester, I’m studying HTML, CSS, and JavaScript by creating projects that are useful, accessible, and fun to use. By the end of this semester, I hope to possess the skills that enable the making of simple and responsive webpages for small businesses in my local community. My long-term goal is to become a front-end web developer. In the short-term, I would love to work as a freelancer while I pursue my studies.
+            This semester, I’m studying HTML, CSS, and JavaScript by creating projects that are useful, accessible, 
+            and fun to use. By the end of this semester, I hope to possess the skills that enable the making of simple 
+            and responsive webpages for small businesses in my local community. My long-term goal is to become a front-end 
+            web developer. In the short-term, I would love to work as a freelancer while I pursue my studies.
           </p>
           <p>In my spare time, I enjoy cooking, working out, and being outdoors.</p>
           <ul class="tag-list" aria-label="Current skills">
@@ -118,7 +148,8 @@
         <p class="eyebrow">What I’m learning</p>
         <h2 class="section-heading" id="classes-title">Build your web skills</h2>
         <p class="section-intro">
-          Practice the foundations of the web and use them to create responsive, interactive projects.
+          Practice the foundations of the web and use them to create responsive,
+          interactive projects.
         </p>
         <ul class="tag-list">
           <li>HTML structure</li>
@@ -137,6 +168,7 @@
         <p class="section-intro">
           Send a message or explore the map of Gwinnett Technical College.
         </p>
+
         <div class="contact-grid">
           <iframe
             class="map-frame"
@@ -154,18 +186,28 @@
           <form class="contact-form" id="contactForm">
             <h3>Send a message</h3>
             <p>If you are ready for a website that works, send us a message to discuess how we can help.</p>
+
             <div class="form-field">
               <label for="name">Name</label>
               <input id="name" name="name" type="text" autocomplete="name" required>
             </div>
+
             <div class="form-field">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              >
             </div>
+
             <div class="form-field">
               <label for="message">Message</label>
               <textarea id="message" name="message" required></textarea>
             </div>
+
             <button class="button" type="submit">Send message</button>
             <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
           </form>
@@ -205,10 +247,18 @@
       <div class="footer-column social-column">
         <h3>Follow along</h3>
         <ul class="social-links">
-          <li><a href="https://www.facebook.com/" aria-label="Facebook">f</a></li>
-          <li><a href="https://www.instagram.com/" aria-label="Instagram">ig</a></li>
-          <li><a href="https://x.com/" aria-label="X">X</a></li>
-          <li><a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a></li>
+          <li>
+            <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" aria-label="Instagram">ig</a>
+          </li>
+          <li>
+            <a href="https://x.com/" aria-label="X">X</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -217,7 +267,8 @@
       &copy; <span id="year"></span> Diana's Kitchen.
     </p>
   </footer>
-
+  
   <script src="./js/script.js"></script>
 </body>
 </html>
+
